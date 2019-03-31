@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Игорь Басихин](https://up.htmlacademy.ru/adaptive/16/user/973815).
-* Наставник: `Неизвестно`.
+* Студент: [Игорь Басихин](https://htmlacademy.ru/profile/id973815).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/id345377).
 
 ---
 
