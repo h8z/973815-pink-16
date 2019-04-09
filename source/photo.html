@@ -37,67 +37,96 @@
 
   <main class="page-main">
     <section class="gallery">
-      <p class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+      <p class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает
         ваших?</p>
-      <section class="gallery__top top-photo">
-        <picture class="top-photo__picture"></picture>
-        <article class="top-photo__message">
-          <h3 class="top-photo__author">Анна (5 минут назад)</h3>
-          <p class="top-photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
+      <section class="gallery__top">
+        <article class="gallery__top__message">
+          <picture class="gallery__top__picture"></picture>
+          <div class="gallery__top__wrapper">
+            <p class="gallery__top__text">Панорама дня</p>
+          </div>
+          <h3 class="gallery__top__author">Анна (5 минут назад)</h3>
+          <p class="gallery__top__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
-          <p class="top-photo__like like">Нравится: 215</p>
+          <p class="gallery__top__like like">Нравится: 215</p>
         </article>
       </section>
       <ul class="gallery__list list-reset">
         <li class="gallery__item">
-          <picture class="gallery__picture"></picture>
           <article class="gallery__message">
-            <h3 class="gallery__message__author">Левон (5 часов назад)</h3>
-            <p class="gallery__message__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <h3 class="gallery__author">Левон (5 часов назад)</h3>
+            <picture class="gallery__picture"></picture>
+            <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <p class="gallery__like like">Нравится: 356</p>
           </article>
         </li>
         <li class="gallery__item">
-          <picture class="gallery__picture"></picture>
           <article class="gallery__message">
-            <h3 class="gallery__message__author">Антон (12 часов назад)</h3>
-            <p class="gallery__message__comment">Соседи будут рады!</p>
+            <h3 class="gallery__author">Антон (12 часов назад)</h3>
+            <picture class="gallery__picture"></picture>
+            <p class="gallery__comment">Соседи будут рады!</p>
             <p class="gallery__like like">Нравится: 666</p>
           </article>
         </li>
         <li class="gallery__item">
-          <picture class="gallery__picture"></picture>
           <article class="gallery__message">
-            <h3 class="gallery__message__author">Борис (20 часов назад)</h3>
-            <p class="gallery__message__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <h3 class="gallery__author">Борис (20 часов назад)</h3>
+            <picture class="gallery__picture"></picture>
+            <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <p class="gallery__like like">Нравится: 215</p>
           </article>
         </li>
         <li class="gallery__item">
-          <picture class="gallery__picture"></picture>
           <article class="gallery__message">
-            <h3 class="gallery__message__author">Сергей (25 часов назад)</h3>
-            <p class="gallery__message__comment">Самая кубанская в мире!</p>
+            <h3 class="gallery__author">Сергей (25 часов назад)</h3>
+            <picture class="gallery__picture"></picture>
+            <p class="gallery__comment">Самая кубанская в мире!</p>
             <p class="gallery__like like">Нравится: 4</p>
           </article>
         </li>
         <li class="gallery__item">
-          <picture class="gallery__picture"></picture>
           <article class="gallery__message">
-            <h3 class="gallery__message__author">Максим (40 часов назад)</h3>
-            <p class="gallery__message__comment">Где снег-то?</p>
+            <h3 class="gallery__author">Максим (40 часов назад)</h3>
+            <picture class="gallery__picture"></picture>
+            <p class="gallery__comment">Где снег-то?</p>
             <p class="gallery__like like">Нравится: 150</p>
           </article>
         </li>
         <li class="gallery__item">
-          <picture class="gallery__picture"></picture>
           <article class="gallery__message">
-            <h3 class="gallery__message__author">Надежда (45 часов назад)</h3>
-            <p class="gallery__message__comment">Всем GM и взаимные лайки!</p>
+            <h3 class="gallery__author">Надежда (45 часов назад)</h3>
+            <picture class="gallery__picture"></picture>
+            <p class="gallery__comment">Всем GM и взаимные лайки!</p>
             <p class="gallery__like like">Нравится: 2560</p>
           </article>
         </li>
       </ul>
+    </section>
+
+    <section class="post">
+      <h2 class="visually-hidden">Запостить фотографию</h2>
+      <p class="post__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <form class="post__form" action="https://echo.htmlacademy.ru" method="post">
+        <picture class="post__photo"></picture>
+        <div class="post__tools">
+          <div class="post__range-controls">
+            <svg class="post__icon post__icon--active"></svg>
+            <div class="post__bar">
+              <div class="post__toggle post__toggle--crop"></div>
+            </div>
+            <svg class="post__icon post__icon--active"></svg>
+            <div class="post__bar">
+              <div class="post__toggle post__toggle--fill"></div>
+            </div>
+            <svg class="post__icon post__icon--active"></svg>
+            <div class="post__bar">
+              <div class="post__toggle post__toggle--contrast"></div>
+            </div>
+          </div>
+          <input class="post__btn post__btn--submit" type="submit" value="Запостить">
+          <input class="post__btn post__btn--reset" type="reset" value="Отмена">
+        </div>
+      </form>
     </section>
   </main>
 
@@ -116,7 +145,7 @@
         <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy/">Facebook</a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Youtube</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru/">Youtube</a>
       </li>
     </ul>
 

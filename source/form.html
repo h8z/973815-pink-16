@@ -36,6 +36,123 @@
   </header>
 
   <main class="page-main">
+    <section class="contest">
+      <h2 class="visually-hidden">Форма заявки на конкурс</h2>
+      <p class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="contest__field field-reset">
+          <ul class="contest__list list-reset">
+            <li class="contest__item">
+              <label class="contest__label">
+                Фамилия:
+                <input class="contest__input-text" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                Имя:
+                <input class="contest__input-text" type="text" name="first-name" placeholder="Введите ваше имя *" required>
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                Отчество:
+                <input class="contest__input-text" type="text" name="surname" placeholder="Ну и отчество тоже">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest__field">
+          <legend class="contest__legend">С каким приложением путешествовали?</legend>
+          <ul class="contest__list list-reset">
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-radio" type="radio" name="OS" value="iOS" checked>
+                Pink для iOS
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-radio" type="radio" name="OS" value="Android">
+                Pink на Android
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-radio" type="radio" name="OS" value="Windows Phone">
+                Windows Phone
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest__field">
+          <legend class="contest__legend">Контактная информация</legend>
+          <ul class="contest__list list-reset">
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-number" type="tel" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер, пожалуйста">
+                Номер телефона
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-email" type="email" name="email" placeholder="Введите почту *" required>
+                Адрес почты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest__field">
+          <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="contest__list list-reset">
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-checkbox" type="checkbox" name="shark-selfie" checked>
+                Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-checkbox" type="checkbox" name="burn-on-the-beach" checked>
+                Обгорел на пляже
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-checkbox" type="checkbox" name="chuck-norris">
+                Видел Чака Норриса
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-checkbox" type="checkbox" name="souvenirs">
+                Накупил сувениров
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-checkbox" type="checkbox" name="hold-the-tower" checked>
+                Удержал башню
+              </label>
+            </li>
+            <li class="contest__item">
+              <label class="contest__label">
+                <input class="contest__input-checkbox" type="checkbox" name="destroy-hotel">
+                Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest__field">
+          <legend class="contest__legend">Опишите свои эмоции</legend>
+          <textarea class="contest__textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <div class="contest__btn-wrapper">
+          <input class="contest__btn" type="submit" value="Отправить форму">
+          <small class="contest__required"><span class="color-pink">*</span> — Обязательные для заполнения поля</small>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -53,7 +170,7 @@
         <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy/">Facebook</a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Youtube</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru/">Youtube</a>
       </li>
     </ul>
 
