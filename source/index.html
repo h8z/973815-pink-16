@@ -43,7 +43,7 @@
           <a class="os__link os__link--android" href="#">Android</a>
         </li>
         <li class="os__item">
-          <a class="os__link os__link--windows" href="#">Windows</a>
+          <a class="os__link os__link--windows" href="#">Windows Phone</a>
         </li>
       </ul>
       <small class="download-desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
@@ -53,22 +53,133 @@
   <main class="page-main">
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <p class="advantages__title">Устали от серости мегаполиса?</p>
-      <p class="advantages__title">Нам есть, что вам предложить!</p>
+      <p class="advantages__title">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
       <ul class="advantages__list list-reset">
         <li class="advantages__item">
           <p class="advantages__item__title">Поднимает настроение</p>
-          <p class="advantages__item__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <p class="advantages__item__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!</p>
         </li>
         <li class="advantages__item">
           <p class="advantages__item__title">Меняет мир вокруг</p>
-          <p class="advantages__item__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <p class="advantages__item__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить эффект</p>
         </li>
         <li class="advantages__item">
           <p class="advantages__item__title">Заводит новых друзей</p>
-          <p class="advantages__item__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <p class="advantages__item__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
         </li>
       </ul>
+      <div class="advantages__research">
+        <p class="advantages__research__title">Эффект на 24 часа!</p>
+        <p class="advantages__research__desc">Британские ученые провели исследования и доказали, что положительный
+          эффект от использования приложения длится целые сутки!</p>
+        <p class="advantages__research__data">
+          <a class="advantages__research__link">Узнать больше об исследовании</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="review">
+      <h2 class="visually-hiddden">Отзывы пользователей</h2>
+      <div class="review__list">
+        <blockquote class="review__item review__item--current">
+          <cite class="review__item__author">Николай Петров<span class="review__item__author-info">25 лет, водитель
+              трамвая</span></cite>
+          <p class="review__item__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»
+          </p>
+        </blockquote>
+      </div>
+      <ul class="review__pagination pagination list-reset">
+        <li class="pagination__item pagination__item--prev">
+          <a class="pagination__link" href="#">Предыдущий отзыв</a>
+        </li>
+        <li class="pagination__item pagination__item--dot pagination__item--current">
+          <a class="pagination__link" href="#">1</a>
+        </li>
+        <li class="pagination__item pagination__item--dot">
+          <a class="pagination__link" href="#">2</a>
+        </li>
+        <li class="pagination__item pagination__item--dot">
+          <a class="pagination__link" href="#">3</a>
+        </li>
+        <li class="pagination__item pagination__item--next">
+          <a class="pagination__link" href="#">Следующий отзыв</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="price">
+      <h2 class="visually-hidden">Цены и тарифы</h2>
+      <table class="price__list">
+        <thead class="price__list-head">
+          <tr class="price__list-row">
+            <th class="price__head price__head--empty"></th>
+            <th class="price__head">
+              <p class="price__head__tariff">База</p>
+              <p class="price__head__cost">1,99 USD</p>
+            </th>
+            <th class="price__head price__head--hit">
+              <p class="price__head__tariff">Стандарт</p>
+              <p class="price__head__cost">3,99 USD</p>
+            </th>
+            <th class="price__head">
+              <p class="price__head__tariff">Анлим</p>
+              <p class="price__head__cost">9,99 USD</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="price__list-body">
+          <tr class="price__list-row">
+            <td class="price__list-option">Розовый фильтр</td>
+            <td class="price__list-data price__list-data--yes">Да</td>
+            <td class="price__list-data price__list-data--yes">Да</td>
+            <td class="price__list-data price__list-data--yes">Да</td>
+          </tr>
+          <tr class="price__list-row">
+            <td class="price__list-option">Смайлики</td>
+            <td class="price__list-data price__list-data--no">Нет</td>
+            <td class="price__list-data price__list-data--yes">Да</td>
+            <td class="price__list-data price__list-data--yes">Да</td>
+          </tr>
+          <tr class="price__list-row">
+            <td class="price__list-option">Комментарии</td>
+            <td class="price__list-data price__list-data--no">Нет</td>
+            <td class="price__list-data price__list-data--no">Нет</td>
+            <td class="price__list-data price__list-data--yes">Да</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul class="price__pagination pagination list-reset">
+        <li class="pagination__item pagination__item--dot">
+          <a class="pagination__link" href="#">Тариф "База"</a>
+        </li>
+        <li class="pagination__item pagination__item--dot pagination__item--current">
+          <a class="pagination__link" href="#">Тариф "Стандарт"</a>
+        </li>
+        <li class="pagination__item pagination__item--dot">
+          <a class="pagination__link" href="#">Тариф "Анлим"</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p class="feedback__title">Остались вопросы?</p>
+      <p class="feedback__title">Свяжитесь с нами!</p>
+      <div class="feedback__item">
+        <p class="feedback__item__text">Звоните:<a class="feedback__item__link" href="#">+7 (812) 555-66-66</a></p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__item__text">Приезжайте в гости:<a class="feedback__item__link" href="#">ул. Большая
+            Конюшенная, 19/8</a></p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__item__text">Пишите:<a class="feedback__item__link" href="#">mail@htmlacademy.ru</a></p>
+      </div>
     </section>
   </main>
 
@@ -87,7 +198,7 @@
         <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy/">Facebook</a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Youtube</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru/">Youtube</a>
       </li>
     </ul>
 
@@ -98,7 +209,6 @@
       </svg>
     </a>
   </footer>
-
 </body>
 
 </html>
