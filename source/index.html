@@ -83,24 +83,33 @@
 
     <section class="review">
       <h2 class="visually-hiddden">Отзывы пользователей</h2>
-      <div class="review__wrapper slider">
-        <div class="review__list slider__list">
-          <blockquote class="review__item slider__item">
-            <cite class="review__item__author">Николай Петров</cite>
-              <p class="review__item__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»
-              </p>
-          </blockquote>
-          <button class="review__prev" type="button">Предыдущий отзыв</button>
-          <button class="review__next" type="button">Следующий отзыв</button>
-        </div>
-        <p class="review__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+      <div class="review__list">
+        <blockquote class="review__item review__item--current">
+          <cite class="review__item__author">Николай Петров<span class="review__item__author-info">25 лет, водитель
+              трамвая</span></cite>
+          <p class="review__item__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»
+          </p>
+        </blockquote>
       </div>
+      <ul class="review__pagination pagination list-reset">
+        <li class="pagination__item pagination__item--prev">
+          <a class="pagination__link" href="#">Предыдущий отзыв</a>
+        </li>
+        <li class="pagination__item pagination__item--dot pagination__item--current">
+          <a class="pagination__link" href="#">1</a>
+        </li>
+        <li class="pagination__item pagination__item--dot">
+          <a class="pagination__link" href="#">2</a>
+        </li>
+        <li class="pagination__item pagination__item--dot">
+          <a class="pagination__link" href="#">3</a>
+        </li>
+        <li class="pagination__item pagination__item--next">
+          <a class="pagination__link" href="#">Следующий отзыв</a>
+        </li>
+      </ul>
     </section>
 
     <section class="price">
@@ -125,25 +134,36 @@
         </thead>
         <tbody class="price__list-body">
           <tr class="price__list-row">
-            <td class="price__list-data">Розовый фильтр</td>
+            <td class="price__list-option">Розовый фильтр</td>
             <td class="price__list-data price__list-data--yes">Да</td>
             <td class="price__list-data price__list-data--yes">Да</td>
             <td class="price__list-data price__list-data--yes">Да</td>
           </tr>
           <tr class="price__list-row">
-            <td class="price__list-data">Смайлики</td>
+            <td class="price__list-option">Смайлики</td>
             <td class="price__list-data price__list-data--no">Нет</td>
             <td class="price__list-data price__list-data--yes">Да</td>
             <td class="price__list-data price__list-data--yes">Да</td>
           </tr>
           <tr class="price__list-row">
-            <td class="price__list-data">Комментарии</td>
+            <td class="price__list-option">Комментарии</td>
             <td class="price__list-data price__list-data--no">Нет</td>
             <td class="price__list-data price__list-data--no">Нет</td>
             <td class="price__list-data price__list-data--yes">Да</td>
           </tr>
         </tbody>
       </table>
+      <ul class="price__pagination pagination list-reset">
+        <li class="pagination__item pagination__item--dot">
+          <a class="pagination__link" href="#">Тариф "База"</a>
+        </li>
+        <li class="pagination__item pagination__item--dot pagination__item--current">
+          <a class="pagination__link" href="#">Тариф "Стандарт"</a>
+        </li>
+        <li class="pagination__item pagination__item--dot">
+          <a class="pagination__link" href="#">Тариф "Анлим"</a>
+        </li>
+      </ul>
     </section>
 
     <section class="feedback">
@@ -151,16 +171,14 @@
       <p class="feedback__title">Остались вопросы?</p>
       <p class="feedback__title">Свяжитесь с нами!</p>
       <div class="feedback__item">
-        <p class="feedback__item__text">Звоните:</p>
-        <a class="feedback__item__link" href="#">+7 (812) 555-66-66</a>
+        <p class="feedback__item__text">Звоните:<a class="feedback__item__link" href="#">+7 (812) 555-66-66</a></p>
       </div>
       <div class="feedback__item">
-        <p class="feedback__item__text">Приезжайте в гости:</p>
-        <a class="feedback__item__link" href="#">ул. Большая Конюшенная, 19/8</a>
+        <p class="feedback__item__text">Приезжайте в гости:<a class="feedback__item__link" href="#">ул. Большая
+            Конюшенная, 19/8</a></p>
       </div>
       <div class="feedback__item">
-        <p class="feedback__item__text">Пишите:</p>
-        <a class="feedback__item__link" href="#">mail@htmlacademy.ru</a>
+        <p class="feedback__item__text">Пишите:<a class="feedback__item__link" href="#">mail@htmlacademy.ru</a></p>
       </div>
     </section>
   </main>
