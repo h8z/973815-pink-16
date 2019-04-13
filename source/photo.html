@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Приложение «PINK» - Взгляните на жизнь иначе!</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -107,20 +108,26 @@
       <form class="post__form" action="https://echo.htmlacademy.ru" method="post">
         <picture class="post__photo"></picture>
         <div class="post__tools">
-          <div class="post__range-controls">
-            <svg class="post__icon post__icon--active"></svg>
-            <div class="post__bar">
-              <div class="post__toggle post__toggle--crop"></div>
-            </div>
-            <svg class="post__icon post__icon--active"></svg>
-            <div class="post__bar">
-              <div class="post__toggle post__toggle--fill"></div>
-            </div>
-            <svg class="post__icon post__icon--active"></svg>
-            <div class="post__bar">
-              <div class="post__toggle post__toggle--contrast"></div>
-            </div>
-          </div>
+          <ul class="post__range-controls">
+            <li class="post__range-controls__item">
+              <svg class="post__icon post__icon--active" width="50" height="50">
+                <title>Инструмент «Рамка»</title>
+              </svg>
+              <input class="post__toggle post__toggle--crop" type="range">
+            </li>
+            <li class="post__range-controls__item">
+              <svg class="post__icon post__icon--active" width="50" height="50">
+                <title>Инструмент «Заливка»</title>
+              </svg>
+              <input class="post__toggle post__toggle--fill" type="range">
+            </li>
+            <li class="post__range-controls__item">
+              <svg class="post__icon post__icon--active" width="50" height="50">
+                <title>Инструмент «Контрастность»</title>
+              </svg>
+              <input class="post__toggle post__toggle--contrast" type="range">
+            </li>
+          </ul>
           <ul class="post__btns">
             <li class="post__btns__item">
               <input class="post__btn post__btn--submit" type="submit" value="Запостить">
