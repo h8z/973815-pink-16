@@ -11,14 +11,14 @@
 
   background-color: $clr-black;
 
-  -webkit-appearance: none;
+  appearance: none;
   cursor: pointer;
 
   &::-webkit-slider-thumb {
     height: 15px;
     width: 14px;
 
-    -webkit-appearance: none;
+    appearance: none;
 
     background: $clr-grey;
     border: 2px solid $clr-pink;
@@ -45,6 +45,7 @@
   &--submit {
     @include font-preset (18px, 18px, 700, $clr-pink);
   }
+
   &--reset {
     @include font-preset (18px, 18px, 700, fade-out($clr-darkblue, 0.7));
   }

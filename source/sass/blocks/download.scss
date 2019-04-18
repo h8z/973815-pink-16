@@ -26,6 +26,7 @@
 
     background-color: $clr-white;
   }
+
   &:active {
     color: fade-out($clr-pink, 0.3);
 
@@ -50,9 +51,11 @@
   &--ios {
     background: url("../../img/logo-apple.svg") no-repeat bottom center;
   }
+
   &--android {
     background: url("../../img/logo-android.svg") no-repeat bottom center;
   }
+
   &--windows {
     background: url("../../img/logo-microsoft.svg") no-repeat bottom center;
   }

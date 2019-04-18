@@ -27,9 +27,11 @@
   &--twitter {
     background: url("../../img/icon-twitter.svg") no-repeat center;
   }
+
   &--facebook {
     background: url("../../img/icon-facebook.svg") no-repeat center;
   }
+
   &--youtube {
     background: url("../../img/icon-youtube.svg") no-repeat center;
   }
@@ -38,6 +40,7 @@
   &:focus {
     border-color: $clr-darkblue;
   }
+
   &:active {
     border-color: $clr-darkblue;
     opacity: 0.1;

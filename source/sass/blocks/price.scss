@@ -17,11 +17,10 @@
   }
 }
 
-.price__list-data {
-  border: 2px solid $clr-grey;
-}
-
 .price__list-option {
+  @include font-preset (14px, 30px, 300, $clr-darkblue);
+  text-transform: uppercase;
+
   border: 2px solid $clr-grey;
 }
 
@@ -34,18 +33,16 @@
   @include font-preset (24px, 30px, 300, $clr-white);
 }
 
-.price__list-option {
-  @include font-preset (14px, 30px, 300, $clr-darkblue);
-  text-transform: uppercase;
-}
-
 .price__list-data {
   font-size: 0;
+
+  border: 2px solid $clr-grey;
 
   &--yes {
     background: url("../../img/icon-yes.svg") no-repeat center;
     background-size: 31px 21px;
   }
+
   &--no {
     background: url("../../img/icon-no.svg") no-repeat center;
     background-size: 27px 26px;

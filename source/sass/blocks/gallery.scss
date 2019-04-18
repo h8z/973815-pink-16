@@ -48,7 +48,6 @@
 
 .gallery__author {
   @include indent-reset;
-
   @include font-preset (14px, 24px, 700, $clr-darkblue);
 }
 
@@ -58,7 +57,6 @@
 
 .gallery__comment {
   @include indent-reset;
-
   @include font-preset (12px, 24px, 300, $clr-darkblue);
 }
 
@@ -75,7 +73,7 @@
     content: "";
 
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 5px;
 
     width: 13px;
