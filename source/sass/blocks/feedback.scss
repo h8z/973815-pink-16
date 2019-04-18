@@ -1,0 +1,12 @@
+.feedback__title {
+  @include font-preset (24px, normal, 300, $clr-darkblue);
+}
+
+.feedback__item {
+  @include font-preset (18px, normal, 700, $clr-darkblue);
+}
+
+.feedback__link {
+  @include font-preset (24px, normal, 300, $clr-pink);
+  text-decoration: none;
+}

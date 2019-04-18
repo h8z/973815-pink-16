@@ -1,0 +1,54 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__list--open {
+  display: block;
+}
+
+.main-nav__list--closed {
+  display: none;
+}
+
+.main-nav__list {
+  text-align: center;
+}
+
+.main-nav__item {
+  padding: 16px;
+  margin-bottom: 1px;
+
+  background-color: $clr-darkblue;
+  box-shadow: 0px 1px 0 0 $clr-black, inset 0px 1px 0 0 fade-out($clr-white, 0.85);
+}
+
+.main-nav__logo {
+  display: block;
+  padding: 22px 20px;
+  margin-bottom: 1px;
+
+  background-color: $clr-darkblue;
+  box-shadow: 0px 1px 0 0 $clr-black, inset 0px 1px 0 0 fade-out($clr-white, 0.85);
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  font-size: 0;
+
+  border: 0;
+  background-color: transparent;
+}
+
+.main-nav__link {
+  @include font-preset (18px, 31px, 700, $clr-white);
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}

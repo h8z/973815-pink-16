@@ -1,0 +1,53 @@
+.price {
+  background-color: $clr-grey;
+}
+
+.price__list {
+  border-collapse: collapse;
+  background-color: $clr-white;
+}
+
+.price__head {
+  border: 2px solid $clr-grey;
+  background-color: $clr-darkblue;
+
+  &--empty {
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+.price__list-data {
+  border: 2px solid $clr-grey;
+}
+
+.price__list-option {
+  border: 2px solid $clr-grey;
+}
+
+.price__head__tariff {
+  @include font-preset (18px, 30px, 700, $clr-white);
+  text-transform: uppercase;
+}
+
+.price__head__cost {
+  @include font-preset (24px, 30px, 300, $clr-white);
+}
+
+.price__list-option {
+  @include font-preset (14px, 30px, 300, $clr-darkblue);
+  text-transform: uppercase;
+}
+
+.price__list-data {
+  font-size: 0;
+
+  &--yes {
+    background: url("../../img/icon-yes.svg") no-repeat center;
+    background-size: 31px 21px;
+  }
+  &--no {
+    background: url("../../img/icon-no.svg") no-repeat center;
+    background-size: 27px 26px;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin font-preset ($size: 18px, $height: 30px, $weight: 300, $color: $clr-darkblue) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin indent-reset {
+  margin: 0;
+  padding: 0;
+}
