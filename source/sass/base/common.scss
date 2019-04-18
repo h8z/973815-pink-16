@@ -39,7 +39,7 @@ body {
   @include font-preset (24px, 30px, 300, $clr-white);
   text-align: center;
 
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat top;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
   background-size: cover;
 }
 

@@ -49,15 +49,15 @@
   font-size: 0;
 
   &--ios {
-    background: url("../../img/logo-apple.svg") no-repeat bottom center;
+    background: url("../img/logo-apple.svg") no-repeat bottom center;
   }
 
   &--android {
-    background: url("../../img/logo-android.svg") no-repeat bottom center;
+    background: url("../img/logo-android.svg") no-repeat bottom center;
   }
 
   &--windows {
-    background: url("../../img/logo-microsoft.svg") no-repeat bottom center;
+    background: url("../img/logo-microsoft.svg") no-repeat bottom center;
   }
 }
 
