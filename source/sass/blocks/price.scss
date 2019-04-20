@@ -41,7 +41,6 @@
 
 .price__list-option {
   @include indent-reset;
-
   @include font-preset (14px, 30px, 300, $clr-darkblue);
   text-transform: uppercase;
 
@@ -50,14 +49,12 @@
 
 .price__head__tariff {
   @include indent-reset;
-
   @include font-preset (18px, 30px, 700, $clr-white);
   text-transform: uppercase;
 }
 
 .price__head__cost {
   @include indent-reset;
-
   @include font-preset (24px, 30px, 300, $clr-white);
 }
 

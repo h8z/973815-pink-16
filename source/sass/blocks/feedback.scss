@@ -6,7 +6,6 @@
 
 .feedback__title {
   @include indent-reset;
-
   @include font-preset (24px, 30px, 300, $clr-darkblue);
 
   &:last-of-type {
