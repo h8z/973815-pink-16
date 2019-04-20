@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 58px;
+  height: 20px;
+}
+
+.pagination__dot-link {
+  display: block;
+  width: 6px;
+  height: 6px;
+
+  font-size: 0;
+
+  background-color: fade-out($clr-darkblue, 0.7);
+  border: 3px solid &clr-white;
+  border-radius: 50px;
+
+  &--current {
+    background-color: transparent;
+    border: 3px solid $clr-darkblue;
+  }
+}
