@@ -1,11 +1,24 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px 20px;
+}
+
+.review__list {
+  margin-bottom: 14px;
+}
+
 .review__item {
-  margin: 0;
-  padding: 0;
+  @include indent-reset;
+
+  text-align: center;
 }
 
 .review__author {
   @include font-preset (18px, 30px, 700, $clr-black);
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 .review__author-info {
@@ -18,24 +31,15 @@
   @include font-preset (14px, 30px, 400, $clr-darkblue);
 }
 
-.pagination__dot-link {
-  display: block;
-  width: 6px;
-  height: 6px;
-
-  font-size: 0;
-
-  background-color: $clr-darkblue;
-  border-radius: 50px;
-
-  &--current {
-    background-color: $clr-white;
-    border: 3px solid $clr-darkblue;
-  }
+.review__pagination {
+  margin-bottom: 24px;
 }
 
-.pagination__arrow-link {
+.review__arrowspc {
   display: none;
+}
+
+.review__arrowspc__link {
   width: 22px;
   height: 41px;
 
