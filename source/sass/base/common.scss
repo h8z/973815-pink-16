@@ -1,11 +1,8 @@
 body {
-  margin: 0 auto; // auto ВРЕМЕННО
-  padding: 0;
+  @include indent-reset;
+  min-width: 320px;
 
   font-family: "Open Sans", "Arial", sans-serif;
-
-
-  width: 320px; // ВРЕМЕННО
 }
 
 .visually-hidden:not(:focus):not(:active) {
