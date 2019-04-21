@@ -4,38 +4,75 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 59px;
+  min-width: 320px;
+  margin: 0 auto;
 
   background-color: $clr-grey;
+
+  overflow: hidden;
 
   &::before {
     content: "";
 
-    position: absolute;
-    top: -34px;
-    left: 0;
+    display: block;
     width: 100%;
-    height: 34px;
+    height: 52px;
 
-    background: transparent url("../img/bg-triangle-white.svg") no-repeat center;
+    background: $clr-white url("../img/bg-triangle-white.svg") no-repeat top right;
     transform: rotate(180deg);
   }
 }
 
 .price__list {
+  margin-top: 50px;
+
   border-collapse: collapse;
   background-color: $clr-white;
 
-  overflow: hidden;
+  transform: translateX(-140px);
 }
 
 .price__head {
+  position: relative;
+
+  min-width: 276px;
+  box-sizing: border-box;
+  padding: 16px 0 22px;
+
   border: 2px solid $clr-grey;
   background-color: $clr-darkblue;
 
   &--empty {
     background-color: transparent;
     border: 0;
+  }
+
+  &--hit::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -2px;
+
+    width: 74px;
+    height: 73px;
+
+    background: url("../img/bg-hit.svg") no-repeat center;
+  }
+
+  &--hit::after {
+    content: "ХИТ";
+
+    position: absolute;
+    top: 7px;
+    left: 5px;
+
+    width: 74px;
+    height: 73px;
+
+    @include font-preset (14px, 21px, 400, $clr-white);
+
+    transform: rotate(-45deg);
   }
 }
 
@@ -59,17 +96,20 @@
 }
 
 .price__list-data {
-  font-size: 0;
+  padding: 13px 22px 15px;
+
+  @include font-preset (14px, 30px, 300, $clr-darkblue);
+  text-transform: uppercase;
 
   border: 2px solid $clr-grey;
 
   &--yes {
-    background: url("../img/icon-yes.svg") no-repeat center;
+    background: url("../img/icon-yes.svg") no-repeat 95% 50%;
     background-size: 31px 21px;
   }
 
   &--no {
-    background: url("../img/icon-no.svg") no-repeat center;
+    background: url("../img/icon-no.svg") no-repeat 95% 50%;
     background-size: 27px 26px;
   }
 }
