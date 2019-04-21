@@ -1,6 +1,6 @@
 .advantages__title {
   @include indent-reset;
-  margin: 40px 0 -10px;
+  margin: 38px 0 -10px;
 
   @include font-preset (24px, 30px, 400, $clr-darkblue);
   text-align: center;
@@ -12,7 +12,7 @@
   justify-content: space-around;
 
   position: relative;
-  padding: 30px;
+  padding: 30px 30px 0;
   margin-top: 72px;
 
   text-align: center;
@@ -23,26 +23,34 @@
     content: "";
 
     position: absolute;
-    top: -34px;
+    top: -52px;
     left: 0;
     width: 100%;
-    height: 34px;
+    height: 52px;
 
-    background: transparent url("../img/bg-triangle-white.svg") no-repeat center;
+    background: transparent url("../img/bg-triangle-white.svg") no-repeat top right;
+    background-size: 100%;
     transform: rotate(180deg);
   }
-  // &::after {
-  //   content: "";
+}
 
-  //   position: absolute;
-  //   bottom: -50px;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: 0;
+.advantages__item {
+  margin-bottom: 12px;
+}
 
-  //   background: transparent url("../../img/iphone-screen-mobile@1x.png") no-repeat bottom;
-  // }
+.advantages__friends {
+  margin-bottom: 0;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: auto;
+    height: 278px;
+    margin-top: 40px;
+
+    background: transparent url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+  }
 }
 
 .advantages__item__subject {
@@ -51,6 +59,7 @@
 }
 
 .advantages__item__desc {
+  @include indent-reset;
   @include font-preset (14px, 24px, 400, $clr-darkblue);
   margin-top: -5px;
 }
