@@ -1,0 +1,28 @@
+.feedback {
+  padding: 42px 35px;
+
+  text-align: center;
+}
+
+.feedback__title {
+  @include indent-reset;
+  @include font-preset (24px, 30px, 300, $clr-darkblue);
+
+  &:last-of-type {
+    margin-bottom: 34px;
+  }
+}
+
+.feedback__item {
+  @include indent-reset;
+  margin-bottom: 20px;
+
+  @include font-preset (18px, normal, 700, $clr-darkblue);
+  letter-spacing: 1px;
+}
+
+.feedback__link {
+  @include font-preset (24px, normal, 300, $clr-pink);
+  text-decoration: none;
+  letter-spacing: normal;
+}

@@ -1,0 +1,86 @@
+.gallery__title {
+  padding: 32px 38px;
+
+  @include font-preset (14px, 30px, 400, $clr-darkblue);
+  text-align: center;
+}
+
+.gallery__list {
+  padding: 0 6.25%;
+}
+
+.gallery__post {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.gallery__message {
+  padding: 19px;
+
+  background-color: $clr-grey;
+}
+
+.gallery__top__message {
+  box-sizing: border-box;
+  max-width: 87.5%;
+  margin: 0 auto;
+}
+
+.gallery__picture {
+  order: -1;
+}
+
+.gallery__top__text {
+  position: absolute;
+  top: -12px;
+  right: 6%;
+
+  padding: 6px 22px;
+
+  @include font-preset (12px, 24px, 700, $clr-white);
+  text-transform: uppercase;
+
+  background-color: $clr-pink;
+}
+
+.gallery__author {
+  @include indent-reset;
+  @include font-preset (14px, 24px, 700, $clr-darkblue);
+}
+
+.gallery__time {
+  font-weight: 300;
+}
+
+.gallery__comment {
+  @include indent-reset;
+  @include font-preset (12px, 24px, 300, $clr-darkblue);
+}
+
+.like {
+  position: relative;
+
+  @include indent-reset;
+  padding-left: 25px;
+
+  @include font-preset (12px, 24px, 400, $clr-pink);
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    width: 13px;
+    height: 12px;
+
+    background: url("../img/icon-heart.svg") no-repeat center;
+
+    cursor: pointer;
+  }
+}

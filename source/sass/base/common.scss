@@ -1,0 +1,45 @@
+body {
+  @include indent-reset;
+  min-width: 320px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  font-size: 1px;
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-title {
+  min-height: 140px;
+  margin-top: -69px;
+  padding: 99px 40px 0;
+
+  @include font-preset (24px, 30px, 300, $clr-white);
+  text-align: center;
+
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+  background-size: cover;
+}
+
+.placeholder-style::-webkit-input-placeholder {
+  @include font-preset (18px, 30px, 400, $clr-darkblue);
+}
