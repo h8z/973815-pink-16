@@ -41,8 +41,8 @@ body {
 }
 
 .placeholder-style::-webkit-input-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
   @include font-preset (18px, 30px, 400, $clr-darkblue);
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .mobile-hidden {
