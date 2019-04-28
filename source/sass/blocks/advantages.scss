@@ -50,10 +50,6 @@
   margin-top: -5px;
 }
 
-.advantages__research {
-  display: none;
-}
-
 .advantages__research__title {
   @include font-preset (30px, 30px, 700, $clr-black);
 }

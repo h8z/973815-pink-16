@@ -1,5 +1,5 @@
 .gallery__title {
-  padding: 32px 38px;
+  padding: 30px 38px 34px;
 
   @include font-preset (14px, 30px, 400, $clr-darkblue);
   text-align: center;
@@ -18,7 +18,7 @@
 }
 
 .gallery__message {
-  padding: 19px;
+  padding: 14px 19px;
 
   background-color: $clr-grey;
 }
@@ -38,10 +38,11 @@
   top: -12px;
   right: 6%;
 
-  padding: 6px 22px;
+  padding: 6px 16px;
 
   @include font-preset (12px, 24px, 700, $clr-white);
   text-transform: uppercase;
+  letter-spacing: 1px;
 
   background-color: $clr-pink;
 }
@@ -52,19 +53,21 @@
 }
 
 .gallery__time {
-  font-weight: 300;
+  @include font-preset (12px, 24px, 300, $clr-darkblue);
+  text-transform: uppercase;
 }
 
 .gallery__comment {
   @include indent-reset;
-  @include font-preset (12px, 24px, 300, $clr-darkblue);
+  @include font-preset (14px, 24px, 400, $clr-darkblue);
 }
 
 .like {
   position: relative;
 
   @include indent-reset;
-  padding-left: 25px;
+  padding-left: 30px;
+  margin: 8px 0 7px;
 
   @include font-preset (12px, 24px, 400, $clr-pink);
   text-transform: uppercase;

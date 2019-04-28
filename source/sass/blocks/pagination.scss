@@ -21,4 +21,13 @@
     background-color: transparent;
     border: 3px solid $clr-darkblue;
   }
+
+  &:hover,
+  &:focus {
+    background-color: fade-out($clr-darkblue, 0.4);
+  }
+
+  &:active {
+    background-color: fade-out($clr-darkblue, 0.9);
+  }
 }

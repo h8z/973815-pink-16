@@ -19,12 +19,10 @@
   @include font-preset (18px, 30px, 700, $clr-black);
   font-style: normal;
   letter-spacing: 1px;
-}
 
-.review__author-info {
-  display: none;
-
-  @include font-preset (18px, 30px, 700, $clr-darkblue);
+  &--info {
+    color: $clr-darkblue;
+  }
 }
 
 .review__comment {

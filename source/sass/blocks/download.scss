@@ -5,10 +5,6 @@
   background-color: darken($clr-darkblue, 6%);
 }
 
-.download__title {
-  display: none;
-}
-
 .download__btn {
   width: 100%;
 
@@ -28,7 +24,7 @@
   }
 
   &:active {
-    color: fade-out($clr-pink, 0.3);
+    color: fade-out($clr-pink, 0.7);
 
     background-color: $clr-white;
   }

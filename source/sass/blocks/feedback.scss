@@ -1,7 +1,30 @@
 .feedback {
-  padding: 42px 35px;
+  position: relative;
+
+  padding: 42px 35px 0;
 
   text-align: center;
+
+  background-color: $clr-white;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -62px;
+    left: 0;
+
+    width: 100%;
+    height: 62px;
+
+    background: transparent url("../img/bg-triangle-white-footer.svg") no-repeat bottom center;
+  }
+}
+
+.feedback-wrapper {
+  min-height: 614px;
+
+  background: url("../img/bg-map-mobile@1x.png") no-repeat bottom center;
 }
 
 .feedback__title {
@@ -25,4 +48,15 @@
   @include font-preset (24px, normal, 300, $clr-pink);
   text-decoration: none;
   letter-spacing: normal;
+
+  &:hover,
+  &:focus {
+    color: $clr-darkblue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: fade-out($clr-darkblue, 0.7);
+    text-decoration: none;
+  }
 }
