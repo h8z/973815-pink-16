@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  background-color: $clr-darkblue;
 }
 
 .main-nav__list--open {
@@ -24,11 +25,20 @@
 
 .main-nav__logo {
   display: block;
+  width: 75px;
   padding: 22px 20px;
   margin-bottom: 1px;
 
-  background-color: $clr-darkblue;
   box-shadow: 0 1px 0 0 $clr-black, inset 0 1px 0 0 fade-out($clr-white, 0.85);
+
+  &:hover path,
+  &:focus path {
+    fill: $clr-pink;
+  }
+
+  &:active path {
+    fill: fade-out($clr-white, 0.7);
+  }
 }
 
 .main-nav__toggle {
@@ -44,6 +54,15 @@
 
   border: 0;
   background-color: transparent;
+
+  &:hover path,
+  &:focus path {
+    fill: $clr-pink;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__link {
@@ -51,4 +70,15 @@
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $clr-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

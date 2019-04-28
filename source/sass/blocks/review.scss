@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 280px;
+  margin: 0 auto;
   padding: 44px 20px 0;
 }
 
@@ -19,20 +21,14 @@
   @include font-preset (18px, 30px, 700, $clr-black);
   font-style: normal;
   letter-spacing: 1px;
-}
 
-.review__author-info {
-  display: none;
-
-  @include font-preset (18px, 30px, 700, $clr-darkblue);
+  &--info {
+    color: $clr-darkblue;
+  }
 }
 
 .review__comment {
   @include font-preset (14px, 30px, 400, $clr-darkblue);
-}
-
-.review__pagination {
-  margin-bottom: 24px;
 }
 
 .review__arrowspc {
