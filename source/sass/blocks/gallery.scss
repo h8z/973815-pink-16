@@ -1,4 +1,6 @@
 .gallery__title {
+  max-width: 280px;
+  margin: 0 auto;
   padding: 30px 38px 34px;
 
   @include font-preset (14px, 30px, 400, $clr-darkblue);
@@ -6,6 +8,8 @@
 }
 
 .gallery__list {
+  max-width: 280px;
+  margin: 0 auto;
   padding: 0 6.25%;
 }
 
@@ -24,8 +28,7 @@
 }
 
 .gallery__top__message {
-  box-sizing: border-box;
-  max-width: 87.5%;
+  max-width: 240px;
   margin: 0 auto;
 }
 
