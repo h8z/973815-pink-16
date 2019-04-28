@@ -49,7 +49,7 @@
     <div class="page-header__bkgwrapper"></div>
 
     <article class="download">
-      <h1 class="download__title page-title">Взгляните на жизнь иначе!</h1>
+      <h1 class="download__title mobile-hidden page-title">Взгляните на жизнь иначе!</h1>
       <button class="download__btn round-btn" type="button">Скачать приложение</button>
       <ul class="download__list os list-reset">
         <li class="os__item">
@@ -88,7 +88,7 @@
             новых</p>
         </li>
       </ul>
-      <div class="advantages__research">
+      <div class="advantages__research mobile-hidden">
         <p class="advantages__research__title">Эффект на 24 часа!</p>
         <p class="advantages__research__desc">Британские ученые провели исследования и доказали, что положительный
           эффект от использования приложения длится целые сутки!</p>
@@ -102,7 +102,7 @@
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="review__list">
         <blockquote class="review__item review__item--current">
-          <cite class="review__author">Николай Петров<span class="review__author-info">25 лет, водитель
+          <cite class="review__author">Николай Петров<span class="review__author--info mobile-hidden">25 лет, водитель
               трамвая</span></cite>
           <p class="review__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
@@ -184,27 +184,29 @@
         </li>
       </ul>
     </section>
-
-    <section class="feedback">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <p class="feedback__title">Остались вопросы?</p>
-      <p class="feedback__title">Свяжитесь с нами!</p>
-      <ul class="feedback__list list-reset">
-        <li class="feedback__item">
-          <p class="feedback__subject">Звоните:<br><a class="feedback__link" href="#">+7 (812) 555-66-66</a></p>
-        </li>
-        <li class="feedback__item">
-          <p class="feedback__subject">Пишите:<br><a class="feedback__link" href="#">mail@htmlacademy.ru</a></p>
-        </li>
-        <li class="feedback__item">
-          <p class="feedback__subject">Приезжайте в гости:<br><a class="feedback__link" href="#">ул. Большая Конюшенная, 19/8</a></p>
-        </li>
-      </ul>
-    </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo">
+    <div class="feedback-wrapper">
+      <section class="feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <p class="feedback__title">Остались вопросы?</p>
+        <p class="feedback__title">Свяжитесь с нами!</p>
+        <ul class="feedback__list list-reset">
+          <li class="feedback__item">
+            <p class="feedback__subject">Звоните:<br><a class="feedback__link" href="#">+7 (812) 555-66-66</a></p>
+          </li>
+          <li class="feedback__item">
+            <p class="feedback__subject">Пишите:<br><a class="feedback__link" href="#">mail@htmlacademy.ru</a></p>
+          </li>
+          <li class="feedback__item">
+            <p class="feedback__subject">Приезжайте в гости:<br><a class="feedback__link" href="#">ул. Большая Конюшенная, 19/8</a></p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <a class="page-footer__logo page-footer__logo--index">
       <svg class="page-footer__logo-image" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
         <title>Логотип «PINK»</title>
         <g>
@@ -218,7 +220,7 @@
       </svg>
     </a>
 
-    <ul class="page-footer__social social list-reset">
+    <ul class="page-footer__social social list-reset social--index">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
       </li>
@@ -230,7 +232,7 @@
       </li>
     </ul>
 
-    <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="page-footer__copyright page-footer__copyright--index" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
       <svg class="page-footer__copyright-logo" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09">
         <title>Логотип «HTML Academy»</title>
