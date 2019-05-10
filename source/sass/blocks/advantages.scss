@@ -253,16 +253,16 @@
 
   .advantages__research__wrapper {
     display: block;
-    max-width: 525px;
-    margin: 0 auto 0 42%;
-    padding: 150px 0 100px;
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 150px 0 100px 370px;
 
     &::before {
       content: "24";
 
       position: absolute;
-      top: 82px;
-      left: -366px;
+      top: 90px;
+      left: 3px;
 
       width: 298px;
       height: 345px;
@@ -278,8 +278,8 @@
       content: "";
 
       position: absolute;
-      top: 151px;
-      left: -344px;
+      top: 160px;
+      left: 25px;
 
       width: 220px;
       height: 220px;
