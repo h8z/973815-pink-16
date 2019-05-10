@@ -234,3 +234,27 @@
     background: $clr-white url("../img/icon-map-marker.svg") no-repeat center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contest {
+    max-width: 616px;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+
+  .contest__title {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 58px 63px 25px;
+
+    @include font-preset (18px, 30px, 400, $clr-darkblue);
+  }
+
+  .contest__field {
+    order: 0;
+
+    &:nth-child(2n) {
+      background-color: $clr-white;
+    }
+  }
+}

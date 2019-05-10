@@ -1,7 +1,7 @@
 .gallery__title {
   max-width: 280px;
   margin: 0 auto;
-  padding: 30px 38px 34px;
+  padding: 30px 38px 48px;
 
   @include font-preset (14px, 30px, 400, $clr-darkblue);
   text-align: center;
@@ -10,7 +10,7 @@
 .gallery__list {
   max-width: 280px;
   margin: 0 auto;
-  padding: 0 6.25%;
+  padding: 0 20px;
 }
 
 .gallery__post {
@@ -30,6 +30,8 @@
 .gallery__top__message {
   max-width: 240px;
   margin: 0 auto;
+  padding: 14px 19px;
+  background-color: $clr-grey;
 }
 
 .gallery__picture {
@@ -88,5 +90,106 @@
     background: url("../img/icon-heart.svg") no-repeat center;
 
     cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__title {
+    max-width: 660px;
+    padding: 60px 38px 74px;
+
+    @include font-preset (18px, 30px, 400, $clr-darkblue);
+  }
+
+  .gallery__top__message {
+    position: relative;
+    box-sizing: border-box;
+    padding: 27px 84px 24px 27px;
+    max-width: 620px;
+    min-height: 121px;
+  }
+
+  .gallery__message {
+    box-sizing: border-box;
+    padding: 27px 41px 15px 27px;
+    min-height: 155px;
+  }
+
+  .gallery__top__like {
+    position: absolute;
+    top: 0;
+    right: 40px;
+
+    &::before {
+      top: 5px;
+      left: 135px;
+    }
+  }
+
+  .gallery__top__text {
+    top: 50px;
+    right: 20px;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 620px;
+    padding: 20px;
+  }
+
+  .gallery__item {
+    max-width: 300px;
+    margin-right: 20px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .gallery__picture {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__title {
+    max-width: 600px;
+    padding: 92px 0 88px;
+
+    @include font-preset (18px, 30px, 400, $clr-darkblue);
+  }
+
+  .gallery__top__message {
+    max-width: 940px;
+    min-height: 96px;
+    padding: 28px 50px 15px 27px;
+  }
+
+  .gallery__message {
+    min-height: 155px;
+    padding: 28px 41px 15px 27px;
+  }
+
+  .gallery__list {
+    max-width: 940px;
+    padding: 0;
+  }
+
+  .gallery__item {
+    margin-right: 20px;
+
+    &:nth-child(2n) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .gallery__picture {
+    height: 400px;
   }
 }

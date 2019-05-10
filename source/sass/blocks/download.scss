@@ -68,3 +68,38 @@
   @include font-preset (14px, 24px, 300, $clr-white);
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .download {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: transparent;
+  }
+
+  .download__title {
+    display: block;
+    max-width: 186px;
+
+    @include font-preset (40px, normal, 300, $clr-white);
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    top: 20%;
+    right: 60%;
+  }
+
+  .download__title {
+    max-width: 231px;
+
+    font-size: 50px;
+  }
+}
