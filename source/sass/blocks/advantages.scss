@@ -91,23 +91,21 @@
   }
 
   .advantages__item {
+    &--friends {
+      &::after {
+        content: "";
 
-  &--friends {
+        position: absolute;
+        left: 20px;
+        bottom: 0;
 
-    &::after {
-      content: "";
+        width: 268px;
+        height: 481px;
 
-      position: absolute;
-      left: 20px;
-      bottom: 0;
-
-      width: 268px;
-      height: 481px;
-
-      background: transparent url("../img/iphone-screen-3-tablet@1x.png") no-repeat center;
+        background: transparent url("../img/iphone-screen-3-tablet@1x.png") no-repeat center;
+      }
     }
   }
-}
 
   .advantages__research {
     display: block;
@@ -243,8 +241,8 @@
   }
 
   .advantages__item__desc {
-    max-width: 240px;
     @include indent-reset;
+    max-width: 240px;
 
     @include font-preset (18px, 30px, 400, $clr-darkblue);
   }
