@@ -62,7 +62,7 @@
 
 .download-desc {
   display: block;
-  max-width: 280px;
+  width: 280px;
   margin: 0 auto;
 
   @include font-preset (14px, 24px, 300, $clr-white);
@@ -73,33 +73,60 @@
   .download {
     position: absolute;
     top: 40%;
-    right: 50%;
+    right: 51%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    width: 310px;
+    padding: 0;
 
     background-color: transparent;
   }
 
   .download__title {
     display: block;
-    max-width: 186px;
+    width: 200px;
 
-    @include font-preset (40px, normal, 300, $clr-white);
+    @include font-preset (40px, 50px, 300, $clr-white);
     text-align: center;
+  }
+
+  .download-desc {
+    width: 310px;
+
+    @include font-preset (18px, 24px, 300, $clr-white);
+  }
+
+  .download__list {
+    padding: 14px 0;
+  }
+
+  .download__btn {
+    width: 300px;
+    padding: 15px 0 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download {
-    top: 20%;
-    right: 60%;
+    top: 21%;
+    right: 64%;
   }
 
   .download__title {
-    max-width: 231px;
+    width: 240px;
+    margin-bottom: 50px;
 
-    font-size: 50px;
+    @include font-preset (50px, 60px, 300, $clr-white);
+  }
+
+  .download__list {
+    padding: 35px 0;
+  }
+
+  .download__btn {
+    font-size: 21px;
   }
 }

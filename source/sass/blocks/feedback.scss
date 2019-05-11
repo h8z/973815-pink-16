@@ -42,13 +42,11 @@
   margin-bottom: 20px;
 
   @include font-preset (18px, normal, 700, $clr-darkblue);
-  letter-spacing: 1px;
 }
 
 .feedback__link {
   @include font-preset (24px, normal, 300, $clr-pink);
   text-decoration: none;
-  letter-spacing: normal;
 
   &:hover,
   &:focus {

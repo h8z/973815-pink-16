@@ -67,7 +67,6 @@
 
 .main-nav__link {
   @include font-preset (18px, 31px, 700, $clr-white);
-  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
 
