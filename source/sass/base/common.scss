@@ -5,6 +5,11 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+// img { ВРЕМЕННО! ПОМОГАЕТ ВИДЕТЬ РАЗМЕРЫ СЕТОК. ПОТОМ ПОДРУБЛЮ
+//   max-width: 100%;
+//   height: auto;
+// }
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -28,18 +33,6 @@ body {
   margin: 0;
 }
 
-.page-title {
-  min-height: 140px;
-  margin-top: -69px;
-  padding: 99px 40px 0;
-
-  @include font-preset (24px, 30px, 300, $clr-white);
-  text-align: center;
-
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
-  background-size: cover;
-}
-
 .placeholder-style::-webkit-input-placeholder {
   @include font-preset (18px, 30px, 400, $clr-darkblue);
   font-family: "Open Sans", "Arial", sans-serif;
@@ -47,4 +40,10 @@ body {
 
 .mobile-hidden {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-hidden {
+    display: inline;
+  }
 }

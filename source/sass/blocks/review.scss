@@ -20,7 +20,6 @@
 .review__author {
   @include font-preset (18px, 30px, 700, $clr-black);
   font-style: normal;
-  letter-spacing: 1px;
 
   &--info {
     color: $clr-darkblue;
@@ -48,5 +47,35 @@
 
   &--next {
     background: url("../img/icon-review-arrow-right.svg") no-repeat 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 28px 20px 0;
+  }
+
+  .review__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__author {
+    font-size: 20px;
+    padding: 20px 0;
+
+    &--info {
+      display: block;
+
+      @include font-preset (14px, 30px, 400, $clr-black);
+    }
+  }
+
+  .review__comment {
+    order: -1;
+
+    @include font-preset (18px, 30px, 400, $clr-darkblue);
   }
 }

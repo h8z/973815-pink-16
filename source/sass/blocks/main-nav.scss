@@ -13,6 +13,8 @@
 
 .main-nav__list {
   text-align: center;
+
+  box-shadow: 0 -1px 0 0 $clr-black;
 }
 
 .main-nav__item {
@@ -26,10 +28,8 @@
 .main-nav__logo {
   display: block;
   width: 75px;
-  padding: 22px 20px;
+  padding: 21px 20px;
   margin-bottom: 1px;
-
-  box-shadow: 0 1px 0 0 $clr-black, inset 0 1px 0 0 fade-out($clr-white, 0.85);
 
   &:hover path,
   &:focus path {
@@ -67,7 +67,6 @@
 
 .main-nav__link {
   @include font-preset (18px, 31px, 700, $clr-white);
-  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -80,5 +79,57 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    min-height: 110px;
+    margin: 0 auto;
+  }
+
+  .main-nav__logo {
+    @include indent-reset;
+    margin: 27px 130px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+
+    box-shadow: none;
+  }
+
+  .main-nav__item {
+    @include indent-reset;
+    margin-right: 82px;
+
+    background-color: transparent;
+    box-shadow: none;
+
+    &--current {
+      border-bottom: 1px solid $clr-white;
+
+      &:hover,
+      &:focus {
+        border-color: $clr-pink;
+      }
+    }
+  }
+
+  .main-nav__link {
+    @include font-preset (18px, 36px, 400, $clr-white);
+    text-transform: none;
+    padding: 10px 0;
   }
 }

@@ -42,13 +42,11 @@
   margin-bottom: 20px;
 
   @include font-preset (18px, normal, 700, $clr-darkblue);
-  letter-spacing: 1px;
 }
 
 .feedback__link {
   @include font-preset (24px, normal, 300, $clr-pink);
   text-decoration: none;
-  letter-spacing: normal;
 
   &:hover,
   &:focus {
@@ -59,5 +57,62 @@
   &:active {
     color: fade-out($clr-darkblue, 0.7);
     text-decoration: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 660px;
+    padding: 44px 0 0;
+
+    // text-align: center;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -62px;
+      left: 0;
+
+      width: 100%;
+      height: 62px;
+
+      background: transparent url("../img/bg-triangle-white-footer.svg") no-repeat bottom center;
+    }
+  }
+
+  .feedback-wrapper {
+    min-height: 779px;
+
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat 100% -65%;
+  }
+
+  .feedback__title {
+    @include font-preset (40px, 50px, 300, $clr-darkblue);
+
+    &:last-of-type {
+      margin-bottom: 22px;
+    }
+  }
+
+  .feedback__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 630px;
+  }
+
+  .feedback__item {
+    @include indent-reset;
+    margin-bottom: 14px;
+  }
+
+  .feedback__link {
+    display: block;
+    max-width: 240px;
   }
 }

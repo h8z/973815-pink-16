@@ -6,59 +6,302 @@
   text-align: center;
 }
 
+.advantages-wrapper {
+  background: $clr-grey url("../img/bg-triangle-white.svg") no-repeat center top;
+  background-size: 100% auto;
+}
+
 .advantages__list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 
   margin-top: 48px;
   padding: 56px 30px 0;
 
   text-align: center;
-
-  background: $clr-grey url("../img/bg-triangle-white.svg") no-repeat center top;
-  background-size: 100% auto;
 }
 
 .advantages__item {
   max-width: 280px;
-  margin: 0 auto 12px;
-}
+  margin-bottom: 12px;
 
-.advantages__friends {
-  margin-bottom: 0;
+  &--friends {
+    margin-bottom: 0;
 
-  &::after {
-    content: "";
+    &::after {
+      content: "";
 
-    display: block;
-    width: auto;
-    height: 278px;
-    margin-top: 40px;
+      display: block;
+      width: auto;
+      height: 278px;
+      margin-top: 40px;
 
-    background: transparent url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+      background: transparent url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+    }
   }
 }
 
 .advantages__item__subject {
   @include font-preset (18px, 24px, 700, $clr-black);
-  letter-spacing: 1px;
 }
 
 .advantages__item__desc {
   @include indent-reset;
   @include font-preset (14px, 24px, 400, $clr-darkblue);
-  margin-top: -5px;
+}
+
+.advantages__research {
+  display: none;
 }
 
 .advantages__research__title {
-  @include font-preset (30px, 30px, 700, $clr-black);
+  @include font-preset (30px, 36px, 700, $clr-black);
 }
 
 .advantages__research__desc {
-  @include font-preset (18px, 30px, 400, $clr-darkblue);
+  @include font-preset (14px, 24px, 400, $clr-darkblue);
 }
 
 .advantages__research__link {
-  @include font-preset (18px, 30px, 400, $clr-pink);
+  @include font-preset (14px, 24px, 400, $clr-pink);
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-top: 45px;
+
+    @include font-preset (40px, 50px, 300, $clr-darkblue);
+
+    &:last-of-type {
+      max-width: 400px;
+      padding-top: 0;
+    }
+  }
+
+  .advantages__list {
+    position: relative;
+
+    max-width: 635px;
+    margin: 48px auto 0;
+    align-items: flex-end;
+    padding: 56px 25px 45px 0;
+  }
+
+  .advantages__item {
+    max-width: 307px;
+    text-align: left;
+
+    &--friends {
+      &::after {
+        content: "";
+
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+
+        width: 268px;
+        height: 481px;
+
+        background: transparent url("../img/iphone-screen-3-tablet@1x.png") no-repeat center;
+      }
+    }
+  }
+
+  .advantages__research {
+    display: block;
+  }
+
+  .advantages__research__wrapper {
+    position: relative;
+
+    display: block;
+    max-width: 296px;
+    margin: 0 auto 0 50%;
+    padding: 60px 0;
+
+    &::before {
+      content: "24";
+
+      position: absolute;
+      left: -310px;
+
+      width: 238px;
+      height: 276px;
+
+      @include font-preset (96px, 303px, 700, $clr-pink);
+      text-align: center;
+
+      background: url("../img/icon-timer.svg") no-repeat center;
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 114px;
+      left: -292px;
+
+      width: 175px;
+      height: 175px;
+
+      border: 14px solid $clr-pink;
+      border-radius: 50%;
+    }
+  }
+
+  .advantages__research__title {
+    @include indent-reset;
+    padding-top: 30px;
+    width: 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__title {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 65px;
+
+    @include font-preset (50px, 60px, 300, $clr-darkblue);
+
+    &:last-of-type {
+      max-width: 450px;
+      padding-top: 0;
+      padding-bottom: 60px;
+    }
+  }
+
+  .advantages-wrapper {
+    padding-top: 222px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 950px;
+    padding-top: 75px;
+  }
+
+  .advantages__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-left: 15px;
+
+    text-align: center;
+
+    &--happy {
+      &::after {
+        content: "";
+
+        position: absolute;
+        left: -15px;
+        bottom: 265px;
+
+        width: 292px;
+        height: 302px;
+
+        background: transparent url("../img/iphone-screen-1-desktop@1x.png") no-repeat center;
+      }
+    }
+
+    &--world {
+      &::after {
+        content: "";
+
+        position: absolute;
+        left: -10px;
+        bottom: 265px;
+
+        width: 292px;
+        height: 302px;
+
+        background: transparent url("../img/iphone-screen-2-desktop@1x.png") no-repeat center;
+      }
+    }
+
+    &--friends {
+      &::after {
+        content: "";
+
+        position: absolute;
+        left: -5px;
+        bottom: 265px;
+
+        width: 292px;
+        height: 302px;
+
+        background: transparent url("../img/iphone-screen-3-desktop@1x.png") no-repeat center;
+      }
+    }
+  }
+
+  .advantages__item__subject {
+    max-width: 225px;
+
+    @include font-preset (30px, 30px, 700, $clr-black);
+  }
+
+  .advantages__item__desc {
+    @include indent-reset;
+    max-width: 240px;
+
+    @include font-preset (18px, 30px, 400, $clr-darkblue);
+  }
+
+  .advantages__research {
+    background-color: $clr-grey;
+  }
+
+  .advantages__research__wrapper {
+    display: block;
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 106px 0 113px 370px;
+
+    &::before {
+      top: 14px;
+      left: 3px;
+
+      width: 298px;
+      height: 345px;
+
+      @include font-preset (120px, 380px, 700, $clr-pink);
+    }
+
+    &::after {
+      top: 84px;
+      left: 24px;
+
+      width: 220px;
+      height: 220px;
+
+      border: 17px solid $clr-pink;
+      border-radius: 50%;
+    }
+  }
+
+  .advantages__research__title {
+    @include indent-reset;
+    width: auto;
+  }
+
+  .advantages__research__desc {
+    width: 530px;
+
+    @include font-preset (18px, 30px, 400, $clr-darkblue);
+  }
+
+  .advantages__research__link {
+    @include font-preset (18px, 30px, 400, $clr-pink);
+  }
 }
