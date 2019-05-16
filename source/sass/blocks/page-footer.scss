@@ -96,6 +96,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    margin: 0;
+  }
+
   .page-footer-wrapper {
     display: flex;
     width: 620px;
@@ -108,5 +112,10 @@
   .page-footer-wrapper {
     width: 940px;
     min-height: 197px;
+  }
+
+  .page-footer__copyright {
+    font-size: 18px;
+    width: 155px;
   }
 }

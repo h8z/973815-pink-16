@@ -1,31 +1,30 @@
 .feedback {
   position: relative;
 
-  max-width: 280px;
-  padding: 42px 35px 0;
+  padding: 42px 0 1px;
 
   text-align: center;
 
   background-color: $clr-white;
+}
 
-  &::after {
-    content: "";
+.feedback-triangle {
+  position: relative;
+}
 
-    position: absolute;
-    bottom: -62px;
-    left: 0;
+.feedback-triangle__image {
+  position: absolute;
+  top: 0;
 
-    width: 100%;
-    height: 62px;
-
-    background: transparent url("../img/bg-triangle-white-footer.svg") no-repeat bottom center;
-  }
+  width: 100%;
+  height: auto;
 }
 
 .feedback-wrapper {
+  width: 100%;
   min-height: 614px;
 
-  background: url("../img/bg-map-mobile@1x.png") no-repeat bottom center;
+  background: url("../img/bg-map-mobile@1x.png") repeat bottom center;
 }
 
 .feedback__title {
@@ -35,6 +34,11 @@
   &:last-of-type {
     margin-bottom: 34px;
   }
+}
+
+.feedback__list {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .feedback__item {
@@ -66,32 +70,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 660px;
+    // max-width: 660px;
     padding: 44px 0 0;
-
-    // text-align: center;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      bottom: -62px;
-      left: 0;
-
-      width: 100%;
-      height: 62px;
-
-      background: transparent url("../img/bg-triangle-white-footer.svg") no-repeat bottom center;
-    }
   }
 
   .feedback-wrapper {
     min-height: 779px;
 
-    background: url("../img/bg-map-tablet@1x.jpg") no-repeat 100% -65%;
+    background: url("../img/bg-map-tablet@1x.jpg") repeat;
   }
 
   .feedback__title {
+    width: 400px;
+
     @include font-preset (40px, 50px, 300, $clr-darkblue);
 
     &:last-of-type {
@@ -103,10 +94,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 630px;
+    width: 630px;
+
+    z-index: 10;
   }
 
   .feedback__item {
+    min-width: 250px;
+
     @include indent-reset;
     margin-bottom: 14px;
   }
@@ -114,5 +109,55 @@
   .feedback__link {
     display: block;
     max-width: 240px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    max-width: none;
+    padding: 65px 0 0;
+
+    background: linear-gradient(to bottom, #ffffff 91%, transparent 9%);
+  }
+
+  .feedback-triangle {
+    margin-top: -35px;
+  }
+
+  .feedback-wrapper {
+    min-height: 868px;
+    background: url("../img/bg-map-desktop@1x.jpg") repeat 100% -65%;
+  }
+
+  .feedback__title {
+    width: 1000px;
+
+    @include font-preset (50px, 60px, 300, $clr-darkblue);
+
+    &:last-of-type {
+      margin-bottom: 37px;
+    }
+  }
+
+  .feedback__list {
+    width: 960px;
+  }
+
+  .feedback__item {
+    &--call {
+      order: -2;
+    }
+
+    &--visit {
+      order: -1;
+    }
+  }
+
+  .feedback__link {
+    display: block;
+    max-width: 240px;
+    margin-top: 21px;
+
+    line-height: 30px;
   }
 }

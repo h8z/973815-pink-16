@@ -20,6 +20,9 @@
 }
 
 .page-title {
+  max-width: 228px;
+  margin: 0 auto;
+
   @include font-preset (24px, 30px, 300, $clr-white);
   text-align: center;
 }
@@ -41,7 +44,9 @@
   }
 
   .page-title {
-    @include font-preset (50px, normal, 300, $clr-white);
+    max-width: 475px;
+
+    @include font-preset (50px, 60px, 300, $clr-white);
   }
 }
 
@@ -54,17 +59,16 @@
   }
 
   .page-title-wrapper {
-    min-height: 224px;
+    min-height: 222px;
     margin-top: -110px;
-    padding: 170px 40px 0;
+    padding: 172px 40px 0;
 
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat top;
   }
 
   .page-title {
-    @include font-preset (50px, normal, 300, $clr-white);
+    @include font-preset (50px, 60px, 300, $clr-white);
     max-width: 777px;
-    margin: 0 auto;
 
     &--photo {
       max-width: 500px;
