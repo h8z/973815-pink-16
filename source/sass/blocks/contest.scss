@@ -137,6 +137,7 @@
   background-color: #2aab6d;
   border: solid 2px #2aab6d;
   border-radius: 3px;
+  outline: 0;
 
   &:hover,
   &:focus {
@@ -170,6 +171,17 @@
 }
 
 .contest__input {
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    border-color: $clr-darkblue;
+  }
+
+  &:active {
+    border-color: $clr-pink;
+  }
+
   &--text {
     box-sizing: border-box;
     width: 280px;
@@ -231,15 +243,6 @@
     border: solid 2px #e5e5e5;
 
     resize: none;
-  }
-
-  &:hover,
-  &:focus {
-    border-color: $clr-darkblue;
-  }
-
-  &:active {
-    border-color: $clr-pink;
   }
 }
 
@@ -344,7 +347,7 @@
         content: "";
 
         position: absolute;
-        right: 0;
+        right: 2px;
         top: 35px;
 
         width: 60px;
@@ -358,7 +361,7 @@
         content: "";
 
         position: absolute;
-        right: 0;
+        right: 2px;
         top: 35px;
 
         width: 60px;
