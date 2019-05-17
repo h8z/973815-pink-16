@@ -7,6 +7,7 @@
   padding-top: 120px;
 
   background: $clr-grey url("../img/bg-triangle-white.svg") no-repeat center top;
+  background-size: 100%;
 
   overflow: hidden;
 }
@@ -166,5 +167,49 @@
 
   .price__pagination {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding: 148px 0 97px;
+  }
+
+  .price__head {
+    min-width: 235px;
+    padding: 15px 0 22px;
+
+    border-radius: 6px;
+
+    &--hit::before {
+      top: 0;
+      left: 0;
+
+      width: 74px;
+      height: 73px;
+    }
+
+    &--hit::after {
+      top: 9px;
+      left: 5px;
+    }
+  }
+
+  .price__head__tariff {
+    font-size: 18px;
+  }
+
+  .price__head__cost {
+    font-size: 24px;
+  }
+
+  .price__list-option {
+    padding: 0 21px;
+
+    @include font-preset (18px, 30px, 400, $clr-darkblue);
+  }
+
+  .price__list-data {
+    padding: 14px 0;
   }
 }

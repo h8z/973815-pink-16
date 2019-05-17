@@ -44,7 +44,7 @@
 }
 
 .advantages__item__subject {
-  @include font-preset (18px, 24px, 700, $clr-black);
+  @include font-preset (18px, 20px, 700, $clr-black);
 }
 
 .advantages__item__desc {
@@ -66,6 +66,15 @@
 
 .advantages__research__link {
   @include font-preset (14px, 24px, 400, $clr-pink);
+
+  &:hover,
+  &:focus {
+    color: $clr-darkblue;
+  }
+
+  &:active {
+    color: fade-out($clr-darkblue, 0.7);
+  }
 }
 
 @media (min-width: $tablet-width) {

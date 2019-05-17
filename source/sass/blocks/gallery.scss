@@ -1,7 +1,7 @@
 .gallery__title {
   max-width: 280px;
   margin: 0 auto;
-  padding: 30px 38px 48px;
+  padding: 44px 38px 50px;
 
   @include font-preset (14px, 30px, 400, $clr-darkblue);
   text-align: center;
@@ -22,15 +22,16 @@
 }
 
 .gallery__message {
-  padding: 14px 19px;
+  margin-top: -5px;
+  padding: 18px 19px 22px;
 
   background-color: $clr-grey;
 }
 
 .gallery__top__message {
   max-width: 240px;
-  margin: 0 auto;
-  padding: 14px 19px;
+  margin: -5px auto 0;
+  padding: 18px 19px 20px;
   background-color: $clr-grey;
 }
 
@@ -43,7 +44,7 @@
   top: -12px;
   right: 6%;
 
-  padding: 6px 16px;
+  padding: 6px 20px;
 
   @include font-preset (12px, 24px, 700, $clr-white);
   text-transform: uppercase;
@@ -70,8 +71,8 @@
   position: relative;
 
   @include indent-reset;
-  padding-left: 30px;
-  margin: 8px 0 7px;
+  padding-left: 32px;
+  margin-top: 8px;
 
   @include font-preset (12px, 24px, 400, $clr-pink);
   text-transform: uppercase;
@@ -81,7 +82,7 @@
 
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 6px;
 
     width: 13px;
     height: 12px;
@@ -94,8 +95,8 @@
 
 @media (min-width: $tablet-width) {
   .gallery__title {
-    max-width: 660px;
-    padding: 60px 38px 74px;
+    max-width: 450px;
+    padding: 92px 0 75px;
 
     @include font-preset (18px, 30px, 400, $clr-darkblue);
   }
@@ -103,25 +104,40 @@
   .gallery__top__message {
     position: relative;
     box-sizing: border-box;
-    padding: 27px 84px 24px 27px;
+    padding: 25px 84px 23px 27px;
     max-width: 620px;
-    min-height: 121px;
   }
 
   .gallery__message {
     box-sizing: border-box;
-    padding: 27px 41px 15px 27px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 24px 41px 21px 27px;
+    margin: 0;
     min-height: 155px;
+  }
+
+  .like {
+    position: relative;
+
+    @include indent-reset;
+    margin-top: auto;
+
+    &::before {
+      left: 229px;
+      top: 4px;
+    }
   }
 
   .gallery__top__like {
     position: absolute;
-    top: 0;
-    right: 40px;
+    top: 25px;
+    right: 60px;
 
     &::before {
       top: 5px;
-      left: 135px;
+      left: 108px;
     }
   }
 
@@ -134,7 +150,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 620px;
-    padding: 20px;
+    padding: 30px 20px;
   }
 
   .gallery__item {
@@ -160,15 +176,20 @@
     @include font-preset (18px, 30px, 400, $clr-darkblue);
   }
 
+  .gallery__top__text {
+    top: 42px;
+    right: 10.7%;
+  }
+
   .gallery__top__message {
     max-width: 940px;
     min-height: 96px;
-    padding: 28px 50px 15px 27px;
+    padding: 22px 50px 15px 27px;
   }
 
   .gallery__message {
     min-height: 155px;
-    padding: 28px 41px 15px 27px;
+    padding: 25px 41px 20px 27px;
   }
 
   .gallery__list {
@@ -178,6 +199,7 @@
 
   .gallery__item {
     margin-right: 20px;
+    margin-top: 30px;
 
     &:nth-child(2n) {
       margin-right: 20px;
