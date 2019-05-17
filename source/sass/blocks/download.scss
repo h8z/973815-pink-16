@@ -72,7 +72,7 @@
 @media (min-width: $tablet-width) {
   .download {
     position: absolute;
-    top: 40%;
+    bottom: 11.5%;
     right: 51%;
 
     display: flex;
@@ -89,7 +89,7 @@
     display: block;
     width: 200px;
 
-    @include font-preset (40px, 50px, 300, $clr-white);
+    @include font-preset (40px, 48px, 300, $clr-white);
     text-align: center;
   }
 
@@ -111,22 +111,38 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    top: 21%;
-    right: 64%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -52px;
+
+    margin: auto;
+    align-items: flex-start;
+
+    width: 940px;
+    height: 552.5px;
   }
 
   .download__title {
     width: 240px;
-    margin-bottom: 50px;
+    padding: 0 30px;
+    margin-bottom: 38px;
 
     @include font-preset (50px, 60px, 300, $clr-white);
   }
 
   .download__list {
-    padding: 35px 0;
+    padding: 50px 43px 40px;
+    margin: 0;
   }
 
   .download__btn {
+    margin: 0;
+
     font-size: 21px;
+  }
+
+  .download-desc {
+    margin: 0;
   }
 }
