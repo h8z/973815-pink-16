@@ -428,7 +428,6 @@
 @media (min-width: $desktop-width) {
   .contest {
     max-width: 936px;
-    padding: 0 132px;
   }
 
   .contest__title {
@@ -442,7 +441,7 @@
   .contest__field {
     &--info {
       width: 431px;
-      margin: 12px 74px 0 0;
+      margin: 12px auto 0 0;
     }
 
     &--os {
