@@ -5,10 +5,10 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-// img { ВРЕМЕННО! ПОМОГАЕТ ВИДЕТЬ РАЗМЕРЫ СЕТОК. ПОТОМ ПОДРУБЛЮ
-//   max-width: 100%;
-//   height: auto;
-// }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
