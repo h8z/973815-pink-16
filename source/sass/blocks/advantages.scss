@@ -40,9 +40,8 @@
 
       background: transparent url("../img/iphone-screen-mobile@1x.png") no-repeat top;
 
-      @media
-      (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-screen-mobile@2x.png");
         background-size: 157px auto;
       }
@@ -124,9 +123,8 @@
 
         background: transparent url("../img/iphone-screen-3-tablet@1x.png") no-repeat center;
 
-        @media
-        (min-resolution: $retina-dpi),
-        (min-resolution: $retina-dppx) {
+        @media (min-resolution: $retina-dpi),
+          (min-resolution: $retina-dppx) {
           background-image: url("../img/iphone-screen-3-tablet@2x.png");
           background-size: 268px auto;
         }
@@ -235,9 +233,8 @@
 
         background: transparent url("../img/iphone-screen-1-desktop@1x.png") no-repeat center;
 
-        @media
-        (min-resolution: $retina-dpi),
-        (min-resolution: $retina-dppx) {
+        @media (min-resolution: $retina-dpi),
+          (min-resolution: $retina-dppx) {
           background-image: url("../img/iphone-screen-1-desktop@2x.png");
           background-size: 292px auto;
         }
@@ -257,9 +254,8 @@
 
         background: transparent url("../img/iphone-screen-2-desktop@1x.png") no-repeat center;
 
-        @media
-        (min-resolution: $retina-dpi),
-        (min-resolution: $retina-dppx) {
+        @media (min-resolution: $retina-dpi),
+          (min-resolution: $retina-dppx) {
           background-image: url("../img/iphone-screen-2-desktop@2x.png");
           background-size: 292px auto;
         }
@@ -279,9 +275,8 @@
 
         background: transparent url("../img/iphone-screen-3-desktop@1x.png") no-repeat center;
 
-        @media
-        (min-resolution: $retina-dpi),
-        (min-resolution: $retina-dppx) {
+        @media (min-resolution: $retina-dpi),
+          (min-resolution: $retina-dppx) {
           background-image: url("../img/iphone-screen-3-desktop@2x.png");
           background-size: 292px auto;
         }
