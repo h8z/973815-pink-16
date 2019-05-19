@@ -22,7 +22,6 @@
 }
 
 .gallery__message {
-  margin-top: -5px;
   padding: 18px 19px 22px;
 
   background-color: $clr-grey;
@@ -30,13 +29,29 @@
 
 .gallery__top__message {
   max-width: 240px;
-  margin: -5px auto 0;
+  margin: 0 auto 0;
   padding: 18px 19px 20px;
   background-color: $clr-grey;
 }
 
 .gallery__picture {
   order: -1;
+}
+
+.gallery__top__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  background-color: $clr-darkgrey;
+}
+
+.gallery__photo {
+  display: block;
+  width: 280px;
+  height: 180px;
+
+  background-color: $clr-darkgrey;
 }
 
 .gallery__top__text {
@@ -162,7 +177,7 @@
     }
   }
 
-  .gallery__picture {
+  .gallery__photo {
     width: 300px;
     height: 300px;
   }
@@ -210,7 +225,7 @@
     }
   }
 
-  .gallery__picture {
+  .gallery__photo {
     height: 400px;
   }
 }
