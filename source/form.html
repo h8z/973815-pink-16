@@ -61,15 +61,15 @@
         <fieldset class="contest__field contest__field--info field-reset">
           <ul class="contest__list list-reset">
             <li class="contest__item contest__item--info">
-              <label class="contest__label" for="last-name">Фамилия:</label>
+              <label class="contest__label contest__label--for-info" for="last-name">Фамилия:</label>
               <input class="contest__input contest__input--text placeholder-style" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
             </li>
             <li class="contest__item contest__item--info">
-              <label class="contest__label" for="first-name">Имя:</label>
+              <label class="contest__label contest__label--for-info" for="first-name">Имя:</label>
               <input class="contest__input contest__input--text placeholder-style" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
             </li>
             <li class="contest__item contest__item--info">
-              <label class="contest__label" for="surname">Отчество:</label>
+              <label class="contest__label contest__label--for-info" for="surname">Отчество:</label>
               <input class="contest__input contest__input--text placeholder-style" type="text" name="surname" id="surname" placeholder="Ну и отчество тоже">
             </li>
           </ul>
@@ -79,15 +79,15 @@
           <ul class="contest__list contest__list--os list-reset">
             <li class="contest__item contest__item--os">
               <input class="contest__input contest__input--radio" type="radio" name="OS" id="iOS" value="iOS" checked>
-              <label class="contest__label--type2" for="iOS">Pink для iOS</label>
+              <label class="contest__label contest__label--for-radio" for="iOS">Pink для iOS</label>
             </li>
             <li class="contest__item contest__item--os">
               <input class="contest__input contest__input--radio" type="radio" name="OS" id="Android" value="Android">
-              <label class="contest__label--type2" for="Android">Pink на Android</label>
+              <label class="contest__label contest__label--for-radio" for="Android">Pink на Android</label>
             </li>
             <li class="contest__item contest__item--os">
               <input class="contest__input contest__input--radio" type="radio" name="OS" id="Windows" value="Windows">
-              <label class="contest__label--type2" for="Windows">Windows Phone</label>
+              <label class="contest__label contest__label--for-radio" for="Windows">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
@@ -95,11 +95,11 @@
           <legend class="contest__legend mobile-hidden">Контактная информация</legend>
           <ul class="contest__list contest__list--contacts list-reset">
             <li class="contest__item contest__item--contacts contest__item--contacts--tel">
-              <label class="contest__label contest__label--type3" for="phone-number">Номер телефона</label>
+              <label class="contest__label contest__label--for-contacts" for="phone-number">Номер телефона</label>
               <input class="contest__input contest__input--text placeholder-style" type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер, пожалуйста">
             </li>
             <li class="contest__item contest__item--contacts contest__item--contacts--email">
-              <label class="contest__label contest__label--type3" for="email">Адрес почты</label>
+              <label class="contest__label contest__label--for-contacts" for="email">Адрес почты</label>
               <input class="contest__input contest__input--text placeholder-style" type="email" name="email" id="email" placeholder="Введите почту *" required>
             </li>
           </ul>
@@ -109,27 +109,27 @@
           <ul class="contest__list contest__list--achievements list-reset">
             <li class="contest__item contest__item--achievements">
               <input class="contest__input contest__input--checkbox" type="checkbox" name="shark-selfie" id="shark-selfie" checked>
-              <label class="contest__label--type2" for="shark-selfie">Сделал селфи с акулой</label>
+              <label class="contest__label contest__label--for-checkbox" for="shark-selfie">Сделал селфи с акулой</label>
             </li>
             <li class="contest__item contest__item--achievements">
               <input class="contest__input contest__input--checkbox" type="checkbox" name="burn-on-the-beach" id="burn-on-the-beach" checked>
-              <label class="contest__label--type2" for="burn-on-the-beach">Обгорел на пляже</label>
+              <label class="contest__label contest__label--for-checkbox" for="burn-on-the-beach">Обгорел на пляже</label>
             </li>
             <li class="contest__item contest__item--achievements">
               <input class="contest__input contest__input--checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
-              <label class="contest__label--type2" for="chuck-norris">Видел Чака Норриса</label>
+              <label class="contest__label contest__label--for-checkbox" for="chuck-norris">Видел Чака Норриса</label>
             </li>
             <li class="contest__item contest__item--achievements">
               <input class="contest__input contest__input--checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-              <label class="contest__label--type2" for="souvenirs">Накупил сувениров</label>
+              <label class="contest__label contest__label--for-checkbox" for="souvenirs">Накупил сувениров</label>
             </li>
             <li class="contest__item contest__item--achievements">
               <input class="contest__input contest__input--checkbox" type="checkbox" name="hold-the-tower" id="hold-the-tower" checked>
-              <label class="contest__label--type2" for="hold-the-tower">Удержал башню</label>
+              <label class="contest__label contest__label--for-checkbox" for="hold-the-tower">Удержал башню</label>
             </li>
             <li class="contest__item contest__item--achievements">
               <input class="contest__input contest__input--checkbox" type="checkbox" name="destroy-hotel" id="destroy-hotel">
-              <label class="contest__label--type2" for="destroy-hotel">Разгромил отель</label>
+              <label class="contest__label contest__label--for-checkbox" for="destroy-hotel">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
