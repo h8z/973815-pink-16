@@ -9,15 +9,14 @@
 }
 
 .feedback-triangle {
-  position: relative;
-}
-
-.feedback-triangle__image {
   position: absolute;
-  top: 0;
 
   width: 100%;
+  min-height: 68px;
   height: auto;
+
+  background: transparent url("../../img/bg-triangle-white-footer.svg") no-repeat top center;
+  background-size: cover;
 }
 
 .feedback-wrapper {
@@ -74,6 +73,10 @@
     padding: 44px 0 0;
   }
 
+  .feedback-triangle {
+    min-height: 100px;
+  }
+
   .feedback-wrapper {
     min-height: 779px;
 
@@ -117,11 +120,12 @@
     max-width: none;
     padding: 65px 0 0;
 
-    background: linear-gradient(to bottom, #ffffff 91%, transparent 9%);
+    background: linear-gradient(to bottom, #ffffff 50%, transparent 50%);
   }
 
   .feedback-triangle {
-    margin-top: -35px;
+    margin-top: -200px;
+    min-height: 300px;
   }
 
   .feedback-wrapper {
