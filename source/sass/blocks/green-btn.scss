@@ -1,0 +1,36 @@
+.green-btn {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  height: 62px;
+
+  @include font-preset (18px, 30px, 700, $clr-white);
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border: solid 2px #2aab6d;
+  border-radius: 3px;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    border: solid 2px #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: fade-out($clr-white, 0.7);
+  }
+
+  &--disabled {
+    border: solid 2px #e5e5e5;
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .green-btn {
+    width: 300px;
+    height: 63px;
+  }
+}
