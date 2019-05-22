@@ -28,6 +28,7 @@
 
 .review__comment {
   max-width: 300px;
+
   @include font-preset (14px, 30px, 400, $clr-darkblue);
 }
 
