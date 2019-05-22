@@ -47,9 +47,7 @@
 
   &--emotions {
     order: -1;
-
-    max-width: 280px;
-    width: 616px;
+    width: 320px;
     margin: 0 auto;
   }
 }
@@ -197,9 +195,9 @@
     box-sizing: border-box;
     width: 280px;
     height: 200px;
-    padding: 15px;
-    margin-top: 48px;
-    margin-left: 5px;
+    padding: 15px 5px 15px 18px;
+    margin: 48px 0 0 10px;
+    overflow: hidden;
 
     @include font-preset (18px, 30px, 400, $clr-darkblue);
 
@@ -209,7 +207,7 @@
   }
 }
 
-.placeholder-style::-webkit-input-placeholder {
+.placeholder-style::placeholder {
   @include font-preset (18px, 30px, 400, $clr-darkblue);
   font-family: "Open Sans", "Arial", sans-serif;
 }
@@ -217,6 +215,7 @@
 .contest__legend {
   position: relative;
   top: 38px;
+  margin: 0 auto;
 
   max-width: 220px;
 
@@ -320,7 +319,7 @@
     }
 
     &--emotions {
-      max-width: none;
+      width: 620px;
       margin: 42px 0 0;
       padding: 5px 60px 50px;
     }
@@ -345,6 +344,7 @@
   .contest__legend {
     top: 0;
 
+    display: block;
     max-width: none;
     padding: 0 30px;
   }
@@ -414,8 +414,21 @@
     &--for-contacts {
       position: absolute;
 
-      bottom: -6px;
-      left: 19px;
+      bottom: -11px;
+      left: -3px;
+    }
+
+    &--for-radio {
+      &::before {
+        top: -5px;
+        left: 9px;
+      }
+    }
+
+    &--for-checkbox {
+      &::before {
+        left: 10px;
+      }
     }
   }
 
@@ -423,16 +436,6 @@
     &--text {
       flex-grow: 1;
       margin: 0;
-    }
-
-    &--checkbox {
-      top: -7px;
-      left: 6px;
-    }
-
-    &--radio {
-      top: -7px;
-      left: 6px;
     }
 
     &--textarea {
@@ -507,6 +510,7 @@
 
     &--achievements {
       display: flex;
+      width: 870px;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;

@@ -89,7 +89,7 @@
 
   .main-nav__wrapper {
     display: flex;
-    align-items: center;
+    // align-items: center;
     max-width: 960px;
     min-height: 110px;
     margin: 0 auto;
@@ -97,7 +97,7 @@
 
   .main-nav__logo {
     @include indent-reset;
-    margin: 27px auto 27px 10px;
+    margin: 44px auto 27px 10px;
   }
 
   .main-nav__toggle {
@@ -106,12 +106,14 @@
 
   .main-nav__list {
     display: flex;
+    margin-top: 35px;
 
     box-shadow: none;
   }
 
   .main-nav__item {
     @include indent-reset;
+    height: 40px;
     margin-right: 80px;
 
     background-color: transparent;

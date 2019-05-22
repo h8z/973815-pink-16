@@ -27,6 +27,7 @@
 }
 
 .review__comment {
+  max-width: 300px;
   @include font-preset (14px, 30px, 400, $clr-darkblue);
 }
 
@@ -60,6 +61,8 @@
   .review__comment {
     order: -1;
 
+    max-width: 620px;
+
     @include font-preset (18px, 30px, 400, $clr-darkblue);
   }
 }
@@ -68,8 +71,9 @@
   .review {
     position: relative;
 
+    display: block;
     max-width: 700px;
-    // margin: 0 auto;
+    margin: 0 auto;
     padding: 166px 0 20px;
 
     &::before {
@@ -77,6 +81,7 @@
 
       position: absolute;
       top: 70px;
+      left: 45%;
 
       width: 79px;
       height: 63px;
@@ -104,6 +109,8 @@
 
   .review__arrowspc {
     position: absolute;
+    top: 165px;
+    left: -120px;
 
     display: block;
     width: 940px;
@@ -140,5 +147,9 @@
     &:active {
       opacity: 0.1;
     }
+  }
+
+  .review__comment {
+    max-width: 700px;
   }
 }

@@ -66,10 +66,10 @@
 @media (min-width: $tablet-width) {
   .feedback {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    // max-width: 660px;
+    align-items: center;
     padding: 44px 0 0;
   }
 
@@ -84,7 +84,7 @@
   }
 
   .feedback__title {
-    width: 400px;
+    display: block;
 
     @include font-preset (40px, 50px, 300, $clr-darkblue);
 
@@ -134,8 +134,6 @@
   }
 
   .feedback__title {
-    width: 1000px;
-
     @include font-preset (50px, 60px, 300, $clr-darkblue);
 
     &:last-of-type {
