@@ -20,16 +20,15 @@
 }
 
 .page-footer__logo {
-  &:hover path,
-  &:focus path {
-    fill: $clr-pink;
+  color: $clr-darkblue;
+
+  &:hover,
+  &:focus {
+    color: $clr-pink;
   }
 
-  &:active g path {
-    fill: $clr-darkblue;
-  }
-
-  &:active path {
+  &:active {
+    color: $clr-darkblue;
     opacity: 0.3;
   }
 }
