@@ -28,16 +28,17 @@
 .main-nav__logo {
   display: block;
   width: 75px;
-  padding: 21px 20px;
-  margin-bottom: 1px;
+  padding: 22px 20px;
 
-  &:hover path,
-  &:focus path {
-    fill: $clr-pink;
+  color: $clr-white;
+
+  &:hover,
+  &:focus {
+    color: $clr-pink;
   }
 
-  &:active path {
-    fill: fade-out($clr-white, 0.7);
+  &:active {
+    color: fade-out($clr-white, 0.7);
   }
 }
 
@@ -84,6 +85,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__logo {
+    width: 145px;
+    padding: 27px 20px 38px;
+  }
+
+  .main-nav__svg {
+    width: 146.3px;
+    height: 40.375px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-nav {
     background-color: rgba(0, 0, 0, 0.3);
@@ -98,8 +111,8 @@
   }
 
   .main-nav__logo {
-    @include indent-reset;
-    margin: 44px auto 27px 10px;
+    padding: 0;
+    margin: 26px auto auto 10px;
   }
 
   .main-nav__toggle {
