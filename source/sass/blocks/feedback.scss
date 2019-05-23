@@ -6,25 +6,38 @@
   text-align: center;
 
   background-color: $clr-white;
+
+  z-index: 5;
 }
 
 .feedback-triangle {
-  position: relative;
-}
-
-.feedback-triangle__image {
   position: absolute;
-  top: 0;
+
 
   width: 100%;
+  min-height: 68px;
   height: auto;
+
+  background: transparent url("../../img/bg-triangle-white-footer.svg") no-repeat top center;
+  background-size: cover;
+
+  z-index: 1;
 }
 
 .feedback-wrapper {
+  position: relative;
   width: 100%;
   min-height: 614px;
 
   background: url("../img/bg-map-mobile@1x.png") repeat bottom center;
+}
+
+.feedback-map {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 614px;
 }
 
 .feedback__title {
@@ -39,6 +52,8 @@
 .feedback__list {
   width: 280px;
   margin: 0 auto;
+
+  z-index: 10;
 }
 
 .feedback__item {
@@ -67,21 +82,30 @@
 @media (min-width: $tablet-width) {
   .feedback {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    // max-width: 660px;
+    align-items: center;
     padding: 44px 0 0;
+  }
+
+  .feedback-triangle {
+    min-height: 100px;
   }
 
   .feedback-wrapper {
     min-height: 779px;
+    position: relative;
 
-    background: url("../img/bg-map-tablet@1x.jpg") repeat;
+    background: url("../img/bg-map-tablet@1x.jpg") repeat bottom center;
+  }
+
+  .feedback-map {
+    height: 779px;
   }
 
   .feedback__title {
-    width: 400px;
+    display: block;
 
     @include font-preset (40px, 50px, 300, $clr-darkblue);
 
@@ -95,8 +119,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: 630px;
-
-    z-index: 10;
   }
 
   .feedback__item {
@@ -117,21 +139,24 @@
     max-width: none;
     padding: 65px 0 0;
 
-    background: linear-gradient(to bottom, #ffffff 91%, transparent 9%);
+    background: linear-gradient(to bottom, #ffffff 50%, transparent 50%);
   }
 
   .feedback-triangle {
-    margin-top: -35px;
+    margin-top: -200px;
+    min-height: 300px;
   }
 
   .feedback-wrapper {
     min-height: 868px;
-    background: url("../img/bg-map-desktop@1x.jpg") repeat 100% -65%;
+    background: url("../img/bg-map-desktop@1x.jpg") repeat bottom center;
+  }
+
+  .feedback-map {
+    height: 868px;
   }
 
   .feedback__title {
-    width: 1000px;
-
     @include font-preset (50px, 60px, 300, $clr-darkblue);
 
     &:last-of-type {

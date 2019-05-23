@@ -106,7 +106,7 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding: 97px 0 70px;
+    padding: 93px 0 70px;
   }
 
   .price__list {
@@ -143,8 +143,7 @@
 
   .price__list-option {
     box-sizing: border-box;
-
-    padding: 0 15px;
+    padding: 7px 18px;
 
     @include font-preset (14px, 30px, 300, $clr-darkblue);
 
@@ -152,7 +151,7 @@
   }
 
   .price__list-data {
-    padding: 7px 0;
+    padding: 0;
 
     font-size: 0;
 
@@ -204,12 +203,8 @@
   }
 
   .price__list-option {
-    padding: 0 21px;
+    padding: 14px 21px;
 
     @include font-preset (18px, 30px, 400, $clr-darkblue);
-  }
-
-  .price__list-data {
-    padding: 14px 0;
   }
 }

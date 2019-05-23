@@ -47,9 +47,7 @@
 
   &--emotions {
     order: -1;
-
-    max-width: 280px;
-    width: 616px;
+    width: 320px;
     margin: 0 auto;
   }
 }
@@ -90,83 +88,65 @@
 }
 
 .contest__label {
-  display: block;
-  padding-left: 22px;
-  margin-bottom: 5px;
+  &--for-info,
+  &--for-contacts {
+    display: block;
+    padding-left: 22px;
+    margin-bottom: 5px;
 
-  @include font-preset (14px, 30px, 400, $clr-pink);
-  text-transform: uppercase;
+    @include font-preset (14px, 30px, 400, $clr-pink);
+    text-transform: uppercase;
+  }
 
-  &--type2 {
-    display: inline-block;
+  &--for-checkbox,
+  &--for-radio {
+    display: block;
     margin-left: 70px;
 
     @include font-preset (18px, 30px, 400, $clr-darkblue);
-    color: $clr-darkblue;
-  }
-}
 
-.contest__legend {
-  position: relative;
-  top: 38px;
+    &:hover::before,
+    &:focus::before {
+      border-color: $clr-darkblue;
+    }
 
-  max-width: 220px;
-
-  @include font-preset (14px, 18px, 400, $clr-pink);
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.contest__footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.contest__btn {
-  display: block;
-  box-sizing: border-box;
-  width: 280px;
-  height: 62px;
-  margin: 35px 0;
-
-  @include font-preset (18px, 30px, 700, $clr-white);
-  text-transform: uppercase;
-
-  background-color: #2aab6d;
-  border: solid 2px #2aab6d;
-  border-radius: 3px;
-  outline: 0;
-
-  &:hover,
-  &:focus {
-    border: solid 2px #1c9b5e;
-    background-color: #1c9b5e;
+    &:active::before {
+      border-color: $clr-pink;
+    }
   }
 
-  &:active {
-    color: fade-out($clr-white, 0.7);
+  &--for-radio {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -8px;
+      left: -2px;
+
+      appearance: none;
+      width: 38px;
+      height: 38px;
+
+      border: 2px solid #e5e5e5;
+      border-radius: 50%;
+      background: $clr-white;
+    }
   }
 
-  &--disabled {
-    border: solid 2px #e5e5e5;
-    background-color: #e5e5e5;
-  }
-}
+  &--for-checkbox {
+    &::before {
+      content: "";
 
-.contest__required {
-  display: block;
+      position: absolute;
+      top: -5px;
+      left: 0;
 
-  @include font-preset (14px, 30px, 400, $clr-darkblue);
-  text-transform: uppercase;
+      width: 35px;
+      height: 35px;
 
-  &--symbol {
-    color: $clr-pink;
-  }
-
-  &--extratext {
-    display: none;
+      border: 2px solid #e5e5e5;
+      background: $clr-white;
+    }
   }
 }
 
@@ -185,6 +165,7 @@
   &--text {
     box-sizing: border-box;
     width: 280px;
+    height: 64px;
     padding: 15px 20px;
     margin: 0 0 17px 0;
 
@@ -195,48 +176,28 @@
   }
 
   &--checkbox {
-    position: absolute;
-    top: -5px;
-    left: -3px;
+    display: none;
+  }
 
-    appearance: none;
-    width: 38px;
-    height: 38px;
-
-    border: 2px solid #e5e5e5;
-    background: $clr-white;
-
-    &:checked {
-      background: $clr-white url("../img/icon-yes-pink.svg") no-repeat center;
-      fill: $clr-pink;
-    }
+  &--checkbox:checked + label::before {
+    background: $clr-white url("../img/icon-yes-pink.svg") no-repeat center;
   }
 
   &--radio {
-    position: absolute;
-    top: -8px;
-    left: -2px;
+    display: none;
+  }
 
-    appearance: none;
-    width: 38px;
-    height: 38px;
-
-    border: 2px solid #e5e5e5;
-    border-radius: 50%;
-    background: $clr-white;
-
-    &:checked {
-      background: $clr-white url("../img/icon-map-marker.svg") no-repeat center;
-    }
+  &--radio:checked + label::before {
+    background: $clr-white url("../img/icon-map-marker.svg") no-repeat center;
   }
 
   &--textarea {
     box-sizing: border-box;
     width: 280px;
     height: 200px;
-    padding: 15px;
-    margin-top: 48px;
-    margin-left: 5px;
+    padding: 15px 5px 15px 18px;
+    margin: 48px 0 0 10px;
+    overflow: hidden;
 
     @include font-preset (18px, 30px, 400, $clr-darkblue);
 
@@ -246,9 +207,47 @@
   }
 }
 
-.placeholder-style::-webkit-input-placeholder {
+.placeholder-style::placeholder {
   @include font-preset (18px, 30px, 400, $clr-darkblue);
   font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.contest__legend {
+  position: relative;
+  top: 38px;
+  margin: 0 auto;
+
+  max-width: 220px;
+
+  @include font-preset (14px, 18px, 400, $clr-pink);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contest__btn {
+  margin: 35px 0;
+}
+
+.contest__required {
+  display: block;
+
+  @include font-preset (14px, 30px, 400, $clr-darkblue);
+  text-transform: uppercase;
+
+  &--symbol {
+    color: $clr-pink;
+  }
+
+  &--extratext {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -293,7 +292,7 @@
     }
 
     &--emotions {
-      max-width: none;
+      width: 620px;
       margin: 42px 0 0;
       padding: 5px 60px 50px;
     }
@@ -318,6 +317,7 @@
   .contest__legend {
     top: 0;
 
+    display: block;
     max-width: none;
     padding: 0 30px;
   }
@@ -373,20 +373,36 @@
     }
 
     &--achievements {
+      align-items: stretch;
       margin-bottom: 52px;
     }
   }
 
   .contest__label {
-    @include indent-reset;
-    display: inline-block;
-    padding-right: 18px;
+    &--for-info {
+      @include indent-reset;
+      display: inline-block;
+      padding-right: 18px;
+    }
 
-    &--type3 {
+    &--for-contacts {
       position: absolute;
 
-      bottom: -6px;
-      left: 19px;
+      bottom: -11px;
+      left: -3px;
+    }
+
+    &--for-radio {
+      &::before {
+        top: -5px;
+        left: 9px;
+      }
+    }
+
+    &--for-checkbox {
+      &::before {
+        left: 10px;
+      }
     }
   }
 
@@ -394,16 +410,6 @@
     &--text {
       flex-grow: 1;
       margin: 0;
-    }
-
-    &--checkbox {
-      top: -7px;
-      left: 6px;
-    }
-
-    &--radio {
-      top: -7px;
-      left: 6px;
     }
 
     &--textarea {
@@ -422,8 +428,6 @@
   }
 
   .contest__btn {
-    width: 300px;
-    height: 63px;
     margin: 0;
   }
 }
@@ -478,6 +482,7 @@
 
     &--achievements {
       display: flex;
+      width: 870px;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -514,7 +519,7 @@
   }
 
   .contest__label {
-    &--type3 {
+    &--for-contacts {
       bottom: -11px;
     }
   }
