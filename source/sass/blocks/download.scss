@@ -13,6 +13,8 @@
   padding: 14px 0 18px;
 
   @include font-preset (18px, 18px, 700, $clr-white);
+  text-align: center;
+  text-decoration: none;
   letter-spacing: 1px;
 
   border: 3px solid $clr-white;
